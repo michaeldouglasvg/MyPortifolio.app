@@ -70,6 +70,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: purple;
+  padding: .4rem 1rem;
+  border-radius: 10px 0 10px 0;
 }
 
 .header .time__now {
@@ -79,6 +82,22 @@ body {
 .header .time__now span {
   font-size: 17px;
   font-weight: 600;
+}
+
+.header .time__now .hour {
+  color: lime;
+}
+
+.header .time__now .minute {
+  color: #00ddff;
+}
+
+.header .time__now .counter {
+  color: #f66025;
+}
+
+.header .time__now .category {
+  color: white;
 }
 
 .header .theme {
@@ -95,11 +114,12 @@ body {
 }
 
 .content {
-  margin-top: 52px;
+  margin-top: 60px;
 }
 
 .content .home {
   width: 100%;
+  padding-top: 20px;
 }
 
 .content .home__compined {
@@ -286,7 +306,7 @@ body {
   bottom: 0;
   height: 50px;
   width: 100%;
-  background: whitesmoke;
+  background: #d4d4d4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +315,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .window__buttons i {

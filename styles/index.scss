@@ -54,11 +54,26 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        background: purple;
+        padding: .4rem 1rem;
+        border-radius: 10px 0 10px 0;
         &__now{
             margin: 0 auto;
             span{
                 font-size: 17px;
                 font-weight: 600;
+            }
+            .hour{
+                color: rgb(0, 255, 0);
+            }
+            .minute{
+                color: rgb(0, 221, 255);
+            }
+            .counter{
+                color: rgb(246, 96, 37);
+            }
+            .category{
+                color: white;
             }
         }
     }
@@ -77,11 +92,12 @@ body{
 
 // content styles
 .content{
-    margin-top: 52px;
+    margin-top: 60px;
 
     // start of the home page
     .home{
         width: 100%;
+        padding-top: 20px;
        
         &__compined{
             width: 92%;
@@ -214,11 +230,12 @@ body{
         bottom: 0;
         height: 50px;
         width: 100%;
-        background: whitesmoke;
+        background: rgb(212, 212, 212);
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
+        border-radius: 5px 5px 0 0;
         i{
             font-size: 20px;
             padding-left: 30px;

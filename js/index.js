@@ -16,3 +16,37 @@ function showMenu(){
         menu.style.display = "none";
     }
 }
+
+// time management
+
+function displayTime(){
+
+    let dateTime = new Date();
+
+    let hr = dateTime.getHours();
+
+    let mit = dateTime.getMinutes();
+
+    let sec = dateTime.getSeconds();
+
+    const sess = document.getElementById("session");
+
+    if(hr >= 12){
+
+        sess.textContent = "PM";
+        sess.style.color = "orange";
+
+    }else{
+
+        sess.textContent = "AM";
+        sess.style.color = "green";
+
+    }
+
+    document.querySelector(".hour").textContent = hr;
+    document.querySelector(".minute").textContent = mit;
+    document.querySelector(".counter").textContent = sec;
+
+}
+
+setInterval(displayTime, 10);
