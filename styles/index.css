@@ -243,6 +243,7 @@ body {
   margin-bottom: 40px;
   border-radius: 5px 5px 0 5px;
   padding: 1rem .4rem;
+  display: none;
 }
 
 .window__main a {
