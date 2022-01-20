@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+html {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: whitesmoke;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: whitesmoke;
+  z-index: 999;
+}
+
+.header .logo {
+  width: 90px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.header .links {
+  display: none;
+}
+
+.header .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .time__now {
+  margin: 0 auto;
+}
+
+.header .time__now span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.header .theme {
+  width: 40px;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin-right: 10px;
+}
+
+.header .theme i {
+  font-size: 22px;
+}
+
+.content {
+  margin-top: 52px;
+}
+
+.content .home {
+  width: 100%;
+}
+
+.content .home__compined {
+  width: 92%;
+  margin: 0px auto;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.content .home__left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.content .home__left .skills {
+  width: 90%;
+  font-size: 17px;
+  color: orangered;
+  text-align: center;
+  margin-top: 10px;
+  height: 20px;
+  overflow-x: hidden;
+  font-weight: 600;
+}
+
+.content .home__left p {
+  text-align: center;
+  line-height: 1.6rem;
+  color: grey;
+  font-size: 13px;
+}
+
+.content .home__title {
+  font-size: 20px;
+  color: blue;
+  padding: .4rem auto;
+  font-weight: 600;
+}
+
+.content .home__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.content .home__buttons a {
+  padding: .6rem 1rem;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+.content .home__buttons a:nth-child(1) {
+  background: green;
+  color: white;
+}
+
+.content .home__buttons a:nth-child(2) {
+  background: blue;
+  color: white;
+}
+
+.content .home__right {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: grey;
+}
+
+.content .home__right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.window {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.window__main {
+  width: 90%;
+  margin: 5px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-gap: 5px;
+  background: #c8c7c7;
+  margin-bottom: 40px;
+  border-radius: 5px 5px 0 5px;
+  padding: 1rem .4rem;
+}
+
+.window__main a {
+  width: 80px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .4rem auto;
+}
+
+.window__main a i {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.window__main a p {
+  color: gray;
+}
+
+.window__buttons {
+  position: fixed;
+  bottom: 0;
+  height: 35px;
+  width: 100%;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.window__buttons i {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.window__buttons:nth-last-child(1) {
+  padding-right: 30px;
+}
+
+.window__buttons a {
+  width: 40px;
+  margin-left: auto;
+}
+
+.window__buttons a i {
+  font-size: 20px;
+}
+/*# sourceMappingURL=index.css.map */
