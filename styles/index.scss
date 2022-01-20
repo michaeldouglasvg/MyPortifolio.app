@@ -173,17 +173,23 @@ body{
     align-items: center;
     justify-content: center;
 
-    &__main{
+    &__pop{
         width: 90%;
+        height: 150px;
+        margin-bottom: 40px;
+        display: none;
+        transition: all 300ms;
+    }
+
+    &__main{
+        width: 100%;
         margin: 5px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
         grid-gap: 5px;
         background: rgb(200, 199, 199);
-        margin-bottom: 40px;
         border-radius: 5px 5px 0 5px;
         padding: 1rem .4rem;
-        display: none;
 
         a{
             width: 80px;
