@@ -35,11 +35,13 @@ function displayTime(){
 
         sess.textContent = "Hrs";
         sess.style.color = "orange";
+      
 
     }else{
 
         sess.textContent = "Hrs";
         sess.style.color = "green";
+        hr = 0+''+hr;
 
     }
 
