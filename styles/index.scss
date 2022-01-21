@@ -176,6 +176,7 @@ body{
             }
         }
     }
+
 }
 
 // window for smal screen navigations
@@ -192,7 +193,7 @@ body{
     &__pop{
         width: 90%;
         height: 150px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         display: none;
         transition: all 300ms;
     }
@@ -203,7 +204,7 @@ body{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
         grid-gap: 5px;
-        background: rgb(200, 199, 199);
+        background: rgb(217, 217, 217);
         border-radius: 5px 5px 0 5px;
         padding: 1rem .4rem;
 
@@ -218,6 +219,8 @@ body{
             i{
                 font-size: 20px;
                 margin-bottom: 10px;
+                font-weight: 600;
+                color: gray;
             }
             p{
                 color: gray;
@@ -230,7 +233,7 @@ body{
         bottom: 0;
         height: 50px;
         width: 100%;
-        background: rgb(212, 212, 212);
+        background: rgb(224, 222, 222);
         display: flex;
         justify-content: space-around;
         align-items: center;

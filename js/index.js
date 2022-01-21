@@ -33,12 +33,12 @@ function displayTime(){
 
     if(hr >= 12){
 
-        sess.textContent = "PM";
+        sess.textContent = "Hrs";
         sess.style.color = "orange";
 
     }else{
 
-        sess.textContent = "AM";
+        sess.textContent = "Hrs";
         sess.style.color = "green";
 
     }
