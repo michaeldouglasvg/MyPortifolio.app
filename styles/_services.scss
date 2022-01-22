@@ -1,11 +1,34 @@
 .services{
     width: 100%;
+    @media only screen and (min-width: 426px){
+       margin-top: 20px;      
+     }
+     @media only screen and (min-width: 769px){
+       margin-top: 40px;
+     }
+     @media only screen and (min-width: 1025px){
+       margin-top: 50px;
+     }
 
     &__title{
         text-align: center;
         font-size: 2rem;
         color: blue;
         padding: 0 auto 10px auto ;
+        width: 90%;
+        margin: 0 auto;
+        @media only screen and (min-width: 426px){
+            margin: 0 auto;
+            width: 80%;
+        }
+        @media only screen and (min-width: 769px){
+            margin: 0 auto;
+            width: 80%;
+        }
+        @media only screen and (min-width: 1025px){
+            margin: 0 auto;
+            width: 80%;
+        }
     }
 
     &__service-container{
@@ -14,6 +37,18 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
         grid-gap: 10px;
+        @media only screen and (min-width: 426px){
+            width: 90%;
+            margin: 20px auto;     
+         }
+         @media only screen and (min-width: 769px){
+            width: 80%;
+            margin: 20px auto;
+         }
+         @media only screen and (min-width: 1025px){
+            width: 80%;
+            margin: 20px auto;
+         }
     }
 
     &__card-container{
