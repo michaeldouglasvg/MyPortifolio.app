@@ -93,6 +93,7 @@ body{
 // content styles
 .content{
     margin-top: 60px;
+    padding-bottom: 70px;
 
     // start of the home page
     .home{
@@ -117,7 +118,7 @@ body{
             flex-direction: column;
             margin-top: 10px;
 
-            .skills{
+            .skill{
                 width: 90%;
                 font-size: 17px;
                 color: orangered;

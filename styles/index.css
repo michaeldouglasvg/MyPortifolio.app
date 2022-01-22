@@ -115,6 +115,7 @@ body {
 
 .content {
   margin-top: 60px;
+  padding-bottom: 70px;
 }
 
 .content .home {
@@ -159,7 +160,7 @@ body {
   margin-top: 10px;
 }
 
-.content .home__left .skills {
+.content .home__left .skill {
   width: 90%;
   font-size: 17px;
   color: orangered;
