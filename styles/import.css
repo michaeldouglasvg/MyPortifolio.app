@@ -1,0 +1,191 @@
+.skills {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skills__title {
+  text-align: center;
+  font-size: 2rem;
+  color: blue;
+  padding: 0 auto 10px auto;
+}
+
+.skills__container {
+  width: 98%;
+  margin: 5px auto;
+}
+
+.skills__description {
+  text-align: center;
+  line-height: 1.5rem;
+  color: gray;
+}
+
+.skills__display {
+  width: 100%;
+  margin-top: 20px;
+  padding: .4rem auto;
+}
+
+.skills__compined {
+  width: 100%;
+}
+
+.skills__compined .general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.skills__compined .general p {
+  font-size: 14px;
+  color: orangered;
+}
+
+.skills__compined .general i {
+  font-size: 14px;
+  color: #00ff3c;
+}
+
+.skills__card-container {
+  width: 94%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  margin: 0 auto;
+  display: none;
+}
+
+.skills__card-container .card {
+  width: 70px;
+  max-width: 80px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: .6rem .4rem;
+}
+
+.skills__card-container .card img {
+  width: 50px;
+  max-width: 60px;
+  max-height: 60px;
+  height: 50px;
+}
+
+.skills__card-container .card p {
+  text-align: center;
+  color: gray;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.skills__category {
+  width: 98%;
+  margin: 20px auto;
+}
+
+.skills__category .types {
+  font-size: 14px;
+  color: orangered;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.skills__category-container {
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  padding: .8rem 0;
+  border-radius: 4px;
+}
+
+.skills__category-container .toggle {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.skills__category-container .toggle .top-section {
+  width: 98%;
+  margin: 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .4rem .4rem;
+  border-bottom: 1px solid #bab8b8;
+  border-top: 1px solid #bab8b8;
+}
+
+.skills__category-container .toggle .bottom-text {
+  width: 96%;
+  margin: 5px auto;
+  display: none;
+}
+
+.skills__category-container .toggle .bottom-text p {
+  padding: .6rem auto;
+  width: 100%;
+  color: gray;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+
+.skills__category-container .toggle .bottom-text .card-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  margin: 0 auto;
+}
+
+.skills__category-container .toggle .bottom-text .card-images img {
+  width: 60px;
+  height: 60px;
+  max-height: 80px;
+  max-width: 80px;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=import.css.map */
