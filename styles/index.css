@@ -698,7 +698,6 @@ body {
   visibility: visible;
   z-index: 1000;
   position: fixed;
-  background: purple;
   top: 0;
   left: 0;
   right: 0;
@@ -708,6 +707,50 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  -webkit-animation: color 2s ease infinite;
+          animation: color 2s ease infinite;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background: blue;
+  }
+  20% {
+    background: orange;
+  }
+  40% {
+    background: purple;
+  }
+  60% {
+    background: white;
+  }
+  80% {
+    background: black;
+  }
+  100% {
+    background: blue;
+  }
+}
+
+@keyframes color {
+  0% {
+    background: blue;
+  }
+  20% {
+    background: orange;
+  }
+  40% {
+    background: purple;
+  }
+  60% {
+    background: white;
+  }
+  80% {
+    background: black;
+  }
+  100% {
+    background: blue;
+  }
 }
 
 .loader img {
