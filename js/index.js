@@ -97,7 +97,28 @@ btnshowlanguages.addEventListener("click", function(){
 
 
 const expBtn = document.querySelectorAll(".experiencebtn");
-const displayexp = document.querySelectorAll(".expdisplay");
+
+expBtn.forEach(function(skill){
+
+    skill.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const currentelement = e.currentTarget.parentElement.querySelector(".expdisplay");
+
+        if(currentelement.style.display == "none"){
+
+            currentelement.style.display = "block";
+            e.currentTarget.parentElement.querySelector("i").classList.toggle("flipchevronup");
+
+        }else{
+
+            currentelement.style.display = "none";
+            e.currentTarget.parentElement.querySelector("i").classList.remove("flipchevronup");
+        }
+
+    });
+});
 
 // expBtn.forEach(function(btnexp){
 
