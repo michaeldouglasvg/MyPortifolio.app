@@ -17,9 +17,11 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: whitesmoke;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .header {
@@ -92,9 +94,9 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 729px) {
+@media only screen and (min-width: 769px) {
   .header .links {
-    display: none;
+    display: block;
   }
 }
 
@@ -209,6 +211,7 @@ body {
 @media only screen and (min-width: 426px) {
   .content .home {
     height: 80vh;
+    margin-top: 30px;
   }
 }
 
@@ -217,6 +220,7 @@ body {
     overflow-x: hidden;
     will-change: 90%;
     height: 90vh;
+    margin-top: 100px;
   }
 }
 
@@ -225,6 +229,7 @@ body {
     overflow-x: hidden;
     will-change: 90%;
     max-width: 90%;
+    margin-top: 150px;
   }
 }
 
@@ -497,6 +502,7 @@ body {
     height: 40%;
     border-radius: 50%;
     margin-left: 20px;
+    margin-top: -20px;
   }
 }
 
@@ -507,6 +513,7 @@ body {
     border-radius: 50%;
     margin-left: 20px;
     margin-top: 20px;
+    margin-top: -20px;
   }
 }
 
@@ -517,6 +524,7 @@ body {
     border-radius: 50%;
     margin-left: 20px;
     margin-top: 20px;
+    margin-top: -20px;
   }
 }
 

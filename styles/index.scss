@@ -15,9 +15,10 @@ html{
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: whitesmoke;
+    transition: all 400ms;
 }
 
 // header styles
@@ -66,8 +67,8 @@ body{
     
     .links{
         display: none;
-        @media only screen and (min-width: 729px){
-             display: none; 
+        @media only screen and (min-width: 769px){
+             display: block; 
         }
         @media only screen and (min-width: 1025px){
              display: block;  
@@ -163,16 +164,19 @@ body{
         padding-top: 20px;
         @media only screen and (min-width: 426px){
             height: 80vh;
+            margin-top: 30px;
         }
         @media only screen and (min-width: 769px){
             overflow-x: hidden;
             will-change: 90%;
             height: 90vh;
+            margin-top: 100px;
         }
         @media only screen and (min-width: 1025px){
             overflow-x: hidden;
             will-change: 90%;
             max-width: 90%;
+            margin-top: 150px;
         }
        
         &__compined{
@@ -342,6 +346,7 @@ body{
                 height: 40%;
                 border-radius: 50%;
                 margin-left: 20px;
+                margin-top: -20px;
             }
             @media only screen and (min-width: 769px){
                 width: 35%;
@@ -349,6 +354,7 @@ body{
                 border-radius: 50%;
                 margin-left: 20px;
                 margin-top: 20px;
+                margin-top: -20px;
             }
             @media only screen and (min-width: 1025px){
                 width: 35%;
@@ -356,6 +362,7 @@ body{
                 border-radius: 50%;
                 margin-left: 20px;
                 margin-top: 20px;
+                margin-top: -20px;
             }
             img{
                 width: 100%;
