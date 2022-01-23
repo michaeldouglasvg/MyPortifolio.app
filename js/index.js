@@ -1,3 +1,10 @@
+// preloader
+const myLoader = document.querySelector(".loader");
+
+window.addEventListener("load", function(){
+    myLoader.classList.add("hideloader");
+})
+
 // toggle dak mode
 function darkMode(){
     alert("Dark mode functionality is currently under implimentation, Will be functioning soon, Contact for more information")
