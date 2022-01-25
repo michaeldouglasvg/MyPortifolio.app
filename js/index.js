@@ -25,7 +25,10 @@ function darkMode(){
 };
 if(localStorage.getItem('dark-mode') == 'enabled'){
     document.body.classList.toggle('dark-mode');
-    document.getElementById("dmode").classList.toggle('active');
+    document.getElementById("dmode").classList.toggle('dark-mode');
+    document.getElementById("dmode").className = "fa fa-sun-o";
+}else{
+    document.getElementById("dmode").className = "fa fa-moon-o";
 }
 
 // localStorage.removeItem('darkMode');
