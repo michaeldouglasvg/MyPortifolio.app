@@ -10,8 +10,18 @@ window.addEventListener("load", function(){
 
 // toggle dak mode
 function darkMode(){
-    alert("Dark mode functionality is currently under implimentation, Will be functioning soon, Contact for more information")
-}
+    // alert("Dark mode functionality is currently under implimentation, Will be functioning soon, Contact for more information")
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        document.getElementById("dmode").className = "fa fa-sun-o";
+
+    }else{
+
+        document.getElementById("dmode").className = "fa fa-moon-o";
+    };
+};
 
 
 function myInfor(){
