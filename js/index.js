@@ -140,6 +140,97 @@ expBtn.forEach(function(skill){
     });
 });
 
+
+
+// languages image autoloader/ dynamics
+const lanImages = [
+    {
+        id: 1,
+        image: "../images/Languages/python.png",
+        langname: "Python",
+    },
+    {
+        id: 2,
+        image: "../images/Languages/JavaScript.png",
+        langname: "JavaScript",
+    },
+    {
+        id: 3,
+        image: "../images/Languages/php.png",
+        langname: "PHP",
+    },
+    {
+        id: 4,
+        image: "../images/Languages/MySQL.png",
+        langname: "MySQL",
+    },
+    {
+        id: 5,
+        image: "../images/Languages/laravel.png",
+        langname: "Laravel",
+    },
+    {
+        id: 6,
+        image: "../images/Languages/Angular.png",
+        langname: "Angular",
+    },
+    {
+        id: 7,
+        image: "../images/Languages/Vue.png",
+        langname: "Vue",
+    },
+    {
+        id: 8,
+        image: "../images/Languages/React.png",
+        langname: "React",
+    },
+    {
+        id: 9,
+        image: "../images/Languages/C++.png",
+        langname: "C++",
+    },
+    {
+        id: 10,
+        image: "../images/Languages/flutter.jpg",
+        langname: "Flutter",
+    },
+    {
+        id: 11,
+        image: "../images/Languages/go.png",
+        langname: "Go lang",
+    },
+    {
+        id: 12,
+        image: "../images/Languages/kotlin.jpg",
+        langname: "Kotlin",
+    },
+    {
+        id: 13,
+        image: "../images/Languages/CSS.png",
+        langname: "CSS",
+    },
+];
+
+window.addEventListener("DOMContentLoaded", function(){
+    displayLanguages(lanImages);
+});
+
+function displayLanguages(item){
+
+    let elements = item.map(function(singleImage){
+        
+        return `
+        <span class="card">
+            <img src=${singleImage.image} alt="language image" height="40px">
+            <p>${singleImage.langname}</p>
+        </span>
+        `;
+    })
+
+    elements = elements.join("");
+
+    langcontainer.innerHTML = elements;
+}
 // expBtn.forEach(function(btnexp){
 
 //     btnexp.addEventListener("click", function(e){
