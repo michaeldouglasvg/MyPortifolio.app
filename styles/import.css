@@ -1,13 +1,3 @@
-:root {
-  --primaryColor: whitesmoke;
-  --secondaryColor: #212121;
-}
-
-.dark-mode {
-  --primaryColor: #000106;
-  --secondaryColor: #ffff;
-}
-
 .contacts {
   width: 100%;
 }
@@ -285,16 +275,6 @@
   padding-bottom: 10px;
 }
 
-:root {
-  --primaryColor: whitesmoke;
-  --secondaryColor: #212121;
-}
-
-.dark-mode {
-  --primaryColor: #000106;
-  --secondaryColor: #ffff;
-}
-
 .projects {
   width: 100%;
 }
@@ -560,16 +540,6 @@
   padding-left: 10px;
 }
 
-:root {
-  --primaryColor: whitesmoke;
-  --secondaryColor: #212121;
-}
-
-.dark-mode {
-  --primaryColor: #000106;
-  --secondaryColor: #ffff;
-}
-
 .services {
   width: 100%;
 }
@@ -723,16 +693,6 @@
 .services .contact a i {
   margin-right: 10px;
   font-size: 14px;
-}
-
-:root {
-  --primaryColor: whitesmoke;
-  --secondaryColor: #212121;
-}
-
-.dark-mode {
-  --primaryColor: #000106;
-  --secondaryColor: #ffff;
 }
 
 .skills {
