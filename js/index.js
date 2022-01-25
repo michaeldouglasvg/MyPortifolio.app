@@ -173,4 +173,7 @@ mediaElement.addEventListener("click", function(e){
 
     alert("Hello, Gtechamour socialmedia platforms data is not yet ready, please contact for more information. Wen it will be out your will get notified. Please stay intouch for more from GtechAmout Technologies. Goodbye");
 
-})
+});
+
+
+document.getElementById("formconfirm").textContent = "By Pressing the send button, you agree to the terms and policies under GtechAmour developers. Cancel by resetting the form."
