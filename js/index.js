@@ -16,13 +16,20 @@ function darkMode(){
     if(document.body.classList.contains("dark-mode")){
 
         document.getElementById("dmode").className = "fa fa-sun-o";
-
+        localStorage.setItem('dark-mode', 'enabled');
     }else{
 
         document.getElementById("dmode").className = "fa fa-moon-o";
+        localStorage.setItem('dark-mode', 'disabled');
     };
 };
+if(localStorage.getItem('dark-mode') == 'enabled'){
+    document.body.classList.toggle('dark-mode');
+    document.getElementById("dmode").classList.toggle('active');
+}
 
+// localStorage.removeItem('darkMode');
+// localStorage.clear(); //The syntax for removing all the localStorage items
 
 function myInfor(){
     alert("Hi, Am Michael Douglas. Build this portifolio in basis of HTML5, CSS3, JS and Libraries");
