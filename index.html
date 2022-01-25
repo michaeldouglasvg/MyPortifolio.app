@@ -402,7 +402,11 @@
                                <textarea name="message" cols="30" rows="10" placeholder="Type your message here and it should not exceed more than (250 word(s))"></textarea>
                             </div>
                             <div class="input-group">
-                                <div data-netlify-recaptcha="true" class="robotverification"></div>
+                                <span>Attouch your File: </span>
+                                <input type="file" name="myFile" id="myFile">
+                            </div>
+                            <div class="input-group">
+                                <p id="formconfirm"></p>
                                 <div class="confirm">
                                     <input type="reset" value="Clear Form">
                                     <input type="submit" value="Send Message">
