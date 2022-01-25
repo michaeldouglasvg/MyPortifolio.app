@@ -248,6 +248,7 @@
   width: 100%;
   margin-top: 10px;
   height: 40px;
+  background: green;
 }
 
 .contacts__form-container form .input-group p {
