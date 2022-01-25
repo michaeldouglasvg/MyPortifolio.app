@@ -2,15 +2,11 @@
 :root {
   --primaryColor: whitesmoke;
   --secondaryColor: #212121;
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
 }
 
 .dark-mode {
   --primaryColor: #000106;
   --secondaryColor: #ffff;
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
 }
 
 * {
@@ -24,14 +20,12 @@
   color: var(--secondaryColor);
   background: var(--primaryColor);
   list-style: none;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 html {
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
   scroll-behavior: smooth;
-  color: var(--secondaryColor);
-  background: var(--primaryColor);
 }
 
 .flipchevronup {
@@ -189,6 +183,7 @@ body {
   background: purple;
   padding: .4rem 1rem;
   border-radius: 10px 0 10px 0;
+  width: 130px;
 }
 
 .header .time__now {
@@ -196,7 +191,7 @@ body {
 }
 
 .header .time__now span {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -224,6 +219,8 @@ body {
   place-content: center;
   margin-right: 10px;
   color: var(--secondaryColor);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 @media only screen and (min-width: 426px) {
@@ -247,6 +244,8 @@ body {
 .header .theme i {
   font-size: 22px;
   cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .content {
@@ -290,7 +289,7 @@ body {
 
 .content .home__compined {
   width: 92%;
-  margin: 0px auto;
+  margin: 5px auto;
   padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,6 +607,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: transparent;
 }
 
 @media only screen and (min-width: 769px) {
@@ -626,23 +626,65 @@ body {
   width: 90%;
   height: 150px;
   margin-bottom: 50px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   display: none;
+  background: transparent;
+}
+
+.window .showwindoicons {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 50px;
   -webkit-transition: all 300ms;
   transition: all 300ms;
+  display: none;
 }
 
 .window__main {
   width: 100%;
-  margin: 5px auto;
+  margin: 10px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   grid-gap: 5px;
-  background: #d9d9d9;
   border-radius: 5px 5px 0 5px;
   padding: 1rem .4rem;
   max-width: 280px;
+  background: #020235;
+  -webkit-animation: zomin .1s ease forwards;
+          animation: zomin .1s ease forwards;
+}
+
+@-webkit-keyframes zomin {
+  from {
+    visibility: hidden;
+    z-index: -999;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    visibility: visible;
+    z-index: 999;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zomin {
+  from {
+    visibility: hidden;
+    z-index: -999;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    visibility: visible;
+    z-index: 999;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media only screen and (min-width: 426px) {
@@ -669,17 +711,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: .4rem auto;
+  margin: 0 auto;
 }
 
 .window__main a i {
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 600;
-  color: gray;
+  padding-right: 10px;
 }
 
 .window__main a p {
-  color: gray;
+  color: var(--secondaryColor);
 }
 
 .window__buttons {
@@ -687,7 +730,6 @@ body {
   bottom: 0;
   height: 50px;
   width: 100%;
-  background: #e0dede;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,11 +740,13 @@ body {
           align-items: center;
   padding-bottom: 5px;
   border-radius: 5px 5px 0 0;
+  background: #020235;
 }
 
 .window__buttons i {
   font-size: 20px;
-  padding-left: 30px;
+  margin-left: 30px;
+  background: #020235;
 }
 
 .window__buttons:nth-last-child(1) {
@@ -712,10 +756,14 @@ body {
 .window__buttons a {
   width: 40px;
   margin-left: auto;
+  background: #020235;
 }
 
 .window__buttons a i {
   font-size: 20px;
+  text-align: center;
+  color: var(--secondaryColor);
+  background: #020235;
 }
 
 .loader {

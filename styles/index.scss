@@ -3,12 +3,11 @@
 :root {
     --primaryColor: whitesmoke;
     --secondaryColor: #212121;
-     transition: all 400ms;
 }
 .dark-mode{
     --primaryColor: #000106;
     --secondaryColor: #ffff;
-    transition: all 400ms;
+    
 }
 
 *{
@@ -21,12 +20,10 @@
     color: var(--secondaryColor);
     background: var(--primaryColor);
     list-style: none;
+    transition: all 500ms;
 }
 html{
-    transition: all 300ms;
     scroll-behavior: smooth;
-    color: var(--secondaryColor);
-    background: var(--primaryColor);
 }
 
 
@@ -139,19 +136,11 @@ body{
         background: purple;
         padding: .4rem 1rem;
         border-radius: 10px 0 10px 0;
-        // @media only screen and (min-width: 426){
-        //     margin: 0 2px 0 auto;
-        // }
-        // @media only screen and (min-width: 729){
-            
-        // }
-        // @media only screen and (min-width: 1025){
-            
-        // }
+        width: 130px;
         &__now{
             margin: 0 auto;
             span{
-                font-size: 17px;
+                font-size: 14px;
                 font-weight: 600;
             }
             .hour{
@@ -176,6 +165,7 @@ body{
         place-content: center;
         margin-right: 10px;
         color: var(--secondaryColor);
+        transition: all 500ms;
         @media only screen and (min-width: 426px){
             margin-right: 20px;
         }
@@ -188,6 +178,7 @@ body{
         i{
             font-size: 22px;
             cursor: pointer;
+            transition: all 500ms;
         }
     }
 }
@@ -224,7 +215,7 @@ body{
        
         &__compined{
             width: 92%;
-            margin: 0px auto;
+            margin: 5px auto;
             padding-top: 10px;
             display: flex;
             justify-content: center;
@@ -428,7 +419,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background: transparent;
    @media only screen and (min-width: 769px){
         display: none;
    }
@@ -439,20 +430,43 @@ body{
         width: 90%;
         height: 150px;
         margin-bottom: 50px;
+        transition: all 500ms;
         display: none;
+        background: transparent;
+        
+    }
+
+    .showwindoicons{
+        width: 90%;
+        height: 150px;
+        margin-bottom: 50px;
         transition: all 300ms;
+        display: none;
     }
 
     &__main{
         width: 100%;
-        margin: 5px auto;
+        margin: 10px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
         grid-gap: 5px;
-        background: rgb(217, 217, 217);
         border-radius: 5px 5px 0 5px;
         padding: 1rem .4rem;
         max-width: 280px;
+        background: rgb(2, 2, 53);
+        animation: zomin .1s ease forwards;
+        @keyframes zomin {
+            from{
+                visibility: hidden;
+                z-index: -999;
+                transform: scale(.9);
+            }
+            to{
+                visibility: visible;
+                z-index: 999;
+                transform: scale(1);
+            }
+        }
         @media only screen and (min-width: 426px){
            max-width: 280px;
            margin: 0 auto;
@@ -466,14 +480,15 @@ body{
             justify-content: center;
             align-items: center;
             padding: .4rem auto;
+            margin: 0 auto;
             i{
                 font-size: 20px;
                 margin-bottom: 10px;
                 font-weight: 600;
-                color: gray;
+                padding-right: 10px;
             }
             p{
-                color: gray;
+                color: var(--secondaryColor);
             }
         }
     }
@@ -483,15 +498,16 @@ body{
         bottom: 0;
         height: 50px;
         width: 100%;
-        background: rgb(224, 222, 222);
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding-bottom: 5px;
         border-radius: 5px 5px 0 0;
+        background: rgb(2, 2, 53);
         i{
             font-size: 20px;
-            padding-left: 30px;
+            margin-left: 30px;
+            background: rgb(2, 2, 53);
         }
         &:nth-last-child(1){
             padding-right: 30px;
@@ -500,8 +516,12 @@ body{
         a{
             width: 40px;
             margin-left: auto;
+            background: rgb(2, 2, 53);
             i{
                 font-size: 20px;
+                text-align: center;
+                color: var(--secondaryColor);
+                background: rgb(2, 2, 53);
             }
         }
 
