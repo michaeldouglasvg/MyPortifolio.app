@@ -44,13 +44,10 @@ function showMenu(){
 }
 
 
-
 // cv download functionality
 function cvdownload(){
     alert("Oops, The CV you want to download is not yet uploaded, please use contact form and you will get the notification through your email, when it is uploaded. Thanks for your kindness. Terms and condition applied.")
 }
-
-
 
 
 
@@ -210,11 +207,6 @@ const lanImages = [
         langname: "CSS",
     },
 ];
-
-window.addEventListener("DOMContentLoaded", function(){
-    displayLanguages(lanImages);
-});
-
 function displayLanguages(item){
 
     let elements = item.map(function(singleImage){
@@ -231,33 +223,145 @@ function displayLanguages(item){
 
     langcontainer.innerHTML = elements;
 }
-// expBtn.forEach(function(btnexp){
 
-//     btnexp.addEventListener("click", function(e){
-
-       
-//     })
-// })
 
 
 
 // projects page js
-const projectPage = document.getElementById("project");
-const btnShow = document.querySelectorAll(".language");
-const cardimage = document.querySelectorAll(".imagescards");
-const btnback = document.querySelectorAll(".backpress");
-const cardback = document.querySelectorAll(".cardback");
+const projectContainer = document.getElementById("projectcontainer");
+const projectCard = [
+    {
+        id: 1,
+        projectTitle: "To-do App",
+        projectImage: "../images/Projects/todo.png",
+        projectLink: "https://michaeldouglasvg.github.io/todo-list.com/",
+        projectCartegory: "Web Site",
+        projectSize: "20MBs",
+        hostedOn: "Github",
+        langone: "JavaScript",
+        langTwo: "PHP",
+        langThree: "MySQL",
+        projectDesc: "This was to keep the personal task that are yet to be done, and when done, you can mark and it will track your work",
+    },
+    {
+        id: 1,
+        projectTitle: "Web Template",
+        projectImage: "../images/Projects/templates.png",
+        projectLink: "https://michaeldouglasvg.github.io/prototype.com/",
+        projectCartegory: "Web Site",
+        projectSize: "70MBs",
+        hostedOn: "Github",
+        langone: "JavaScript",
+        langTwo: "HTML5",
+        langTwo: "CSS3",
+        projectDesc: "Build as a free template to help those in need of using webtemplates to create their own site, modify and deploy",
+    },
+    {
+        id: 1,
+        projectTitle: "Main Website",
+        projectImage: "../images/Projects/web.png",
+        projectLink: "https://michaeldouglasvg.github.io/web.com/",
+        projectCartegory: "Web Site",
+        projectSize: "30MBs",
+        hostedOn: "Github",
+        langone: "JavaScript",
+        langTwo: "PHP",
+        langThree: "MySQL",
+        projectDesc: "Was my main webpage that people may find time to learn more about my programming skills and much more",
+    },
+];
+function displayProjects(items){
 
-// btnShow.forEach(function(btnsingle){
+    let contents = items.map(function(singleProject){
+        
+        return `
+            <div class="projects__main-card">
+            <div class="projects__image-link">
+                <p>${singleProject.projectTitle}</p>
+                <img src=${singleProject.projectImage} alt="project image" height="100px">
+                <div class="info">
+                    <a href="" class="language">Language used <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a>
+                    <a href="${singleProject.projectLink}"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="projects__project-description cardback">
+            <div class="top">
+                <div class="left">
+                    <p>Category: ${singleProject.projectCartegory}</p>
+                    <p>Size: ${singleProject.projectSize}</p>
+                    <p>Deployed on: ${singleProject.hostedOn}</p>
+                </div>
+                <div class="right">
+                    <h1>Languages</h1>
+                    <span>
+                        <p>${singleProject.langOne}</p>
+                        <p>${singleProject.langTwo}</p>
+                        <p>${singleProject.langThree}</p>
+                    </span>
+                </div>
+            </div>
+            <p>${singleProject.projectDesc}</p>
+                <div class="bottom">
+                    <i class="fa fa-chevron-left backpress"> Back</i>
+                    <a href="">Link<i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        `;
+    })
 
-//     btnsingle.addEventListener("click", function(e){
-//         e.preventDefault();
-//         alert("hello")
-//     });
+    contents = contents.join("");
 
-// });
+    projectContainer.innerHTML = contents;
+}
 
 
+
+// services container
+const serviveCard = document.getElementById('serviceContainer');
+const singleCard = [
+    {
+        id: 1,
+        serviceImage: "../images/services/tensor.jpg",
+        serviceDesc: "Using tensorflow to impliment Nueral networks and deep learning programming in order to advance the artificial intelligence feautures to solve the real world problems",
+        serviceCall: "tel:+254712176534",
+        serviceEmail: "mailto:douglas1999michael@gmail.com?Subject:Requesting your service for tensorflow to solve my work",
+    },
+    {
+        id: 1,
+        serviceImage: "../images/services/appa.jpg",
+        serviceDesc: "I use flutter for app development since it is a crossplatform functionality, is light weight and easy to learn to develope applicationa and deploy",
+        serviceCall: "tel:+254712176534",
+        serviceEmail: "mailto:douglas1999michael@gmail.com?Subject:Use flutter of Kotlin to make an app for me",
+    },
+    {
+        id: 1,
+        serviceImage: "../images/services/git.png",
+        serviceDesc: "Proving web technology services like pull, push, deploying site and maintainance. Creating different modules to solve different real world problems",
+        serviceCall: "tel:+254712176534",
+        serviceEmail: "mailto:douglas1999michael@gmail.com?Subject:Requesting your web development services",
+    },
+];
+function displayServices(service){
+
+    let services = service.map(function(singleService){
+        
+        return `
+        <div class="services__card-container">
+            <img src=${singleService.serviceImage} alt="service imsge" height="100px">
+            <p class="servicedescription">${singleService.serviceDesc}</p>
+            <div class="contact">
+                <a href="${singleService.serviceCall}"><i class="fa fa-phone"></i>Call</a>
+                <a href="${singleService.serviceEmail}"><i class="fa fa-envelope"></i>Request Service</a>
+            </div>
+        </div>
+        `;
+    })
+
+    services = services.join("");
+
+    serviveCard.innerHTML = services;
+}
 
 
 // contact js
@@ -277,4 +381,11 @@ mediaElement.addEventListener("click", function(e){
 });
 
 
-document.getElementById("formconfirm").textContent = "By Pressing the send button, you agree to the terms and policies under GtechAmour developers. Cancel by resetting the form."
+document.getElementById("formconfirm").textContent = "By Pressing the send button, you agree to the terms and policies under GtechAmour developers. Cancel by resetting the form.";
+
+// loading the different kinds of modules
+window.addEventListener("DOMContentLoaded", function(){
+    displayLanguages(lanImages);
+    displayProjects(projectCard);
+    displayServices(singleCard);
+});
