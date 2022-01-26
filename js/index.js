@@ -53,6 +53,20 @@ function showMenu(){
     }
 }
 
+// show media
+function showMedia(){
+   const elementMedia = document.getElementById("mediaLinks");
+   
+   if(elementMedia.classList.toggle("showlinks")){
+       
+    document.getElementById("mediaIcon").classList.add("flipchevronup");
+
+   }else{
+       
+    document.getElementById("mediaIcon").classList.remove("flipchevronup");
+    
+   }
+}
 
 // cv download functionality
 function cvdownload(){

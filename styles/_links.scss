@@ -1,0 +1,109 @@
+.activatemedia{
+    width: 30px;
+    height: 40px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 999;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px 0 0 5px;
+    padding: .5rem 1rem;
+    display: flex;
+    place-items: center;
+    cursor: pointer;
+    i{
+        font-size: 20px;
+        color: var(--secondaryColor);
+        background: var(--primaryColor);
+        cursor: pointer;
+    }
+}
+
+.sidelinks{
+    width: 160px;
+    position: fixed;
+    right: -161px;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    z-index: 990;
+    box-shadow: 0 0 10px 5px rgba(85, 85, 85, 0.2);
+    border-radius: 5px;
+    background: var(--primaryColor);
+    padding: .5rem 4rem .5rem .1rem;
+    transition: all 500ms;
+
+    &__chevrons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--secondaryColor);
+        background: var(--primaryColor);
+        i{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--secondaryColor);
+            background: var(--primaryColor);
+        }
+    }
+
+    &__title{
+        color: var(--secondaryColor);
+        background: var(--primaryColor);
+    }
+
+    &__section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--primaryColor);
+        
+        .top{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin-top: 10px;
+            background: var(--primaryColor);
+            padding: 0 .4rem;
+        }
+
+        .middle{
+            width: 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+            grid-gap: 10px;
+            margin: 10px auto 20px auto;
+            background: var(--primaryColor);
+            a{
+                background: var(--primaryColor);
+                display: grid;
+                place-items: center;
+                margin-top: 10px;
+                i{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+
+        p{
+            text-align: center;
+            color: var(--secondaryColor);
+            background: var(--primaryColor);
+            font-style: italic;
+            width: 100%;
+            padding-left: 10px;
+        }
+    }
+}
+
+.showlinks{
+    position: fixed;
+    right: 0px;
+}
