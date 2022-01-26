@@ -6,7 +6,14 @@ window.addEventListener("load", function(){
 })
 
 
+// navigation scroll events
+// let mainScrolldiv = document.getElementById("scroll");
+// mainScrolldiv.addEventListener("scroll", event => {
+   
+//     let scroll = mainScrolldiv.scrollTop();
 
+//     alert(scroll);
+// })
 
 // toggle dak mode
 function darkMode(){
