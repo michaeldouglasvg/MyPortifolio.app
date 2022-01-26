@@ -747,6 +747,7 @@ body {
   font-size: 20px;
   margin-left: 30px;
   background: #020235;
+  color: white;
 }
 
 .window__buttons:nth-last-child(1) {
@@ -762,7 +763,7 @@ body {
 .window__buttons a i {
   font-size: 20px;
   text-align: center;
-  color: var(--secondaryColor);
+  color: white;
   background: #020235;
 }
 

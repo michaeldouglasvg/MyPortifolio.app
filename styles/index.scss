@@ -520,6 +520,7 @@ body{
             font-size: 20px;
             margin-left: 30px;
             background: rgb(2, 2, 53);
+            color: white;
         }
         &:nth-last-child(1){
             padding-right: 30px;
@@ -532,7 +533,8 @@ body{
             i{
                 font-size: 20px;
                 text-align: center;
-                color: var(--secondaryColor);
+                // color: var(--secondaryColor);
+                color: white;
                 background: rgb(2, 2, 53);
             }
         }

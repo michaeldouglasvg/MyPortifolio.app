@@ -55,6 +55,7 @@ function showMenu(){
 
 // show media
 function showMedia(){
+
    const elementMedia = document.getElementById("mediaLinks");
    
    if(elementMedia.classList.toggle("showlinks")){
@@ -62,7 +63,7 @@ function showMedia(){
     document.getElementById("mediaIcon").classList.add("flipchevronup");
 
    }else{
-       
+
     document.getElementById("mediaIcon").classList.remove("flipchevronup");
     
    }
@@ -393,16 +394,6 @@ const contactguide = document.getElementById("contactdes");
 contactguide.textContent = "Are you in need to know to technical status, please visit the more information section, for further follow up you can use contact form, Please enter your valid details that can be used to reach to you incase of any reply or comment. Thanks for visitting my site"
 ;
 
-
-// media js
-
-const mediaElement = document.getElementById("media");
-mediaElement.addEventListener("click", function(e){
-    e.preventDefault();
-
-    alert("Hello, Gtechamour socialmedia platforms data is not yet ready, please contact for more information. Wen it will be out your will get notified. Please stay intouch for more from GtechAmout Technologies. Goodbye");
-
-});
 
 
 document.getElementById("formconfirm").textContent = "By Pressing the send button, you agree to the terms and policies under GtechAmour developers. Cancel by resetting the form.";
