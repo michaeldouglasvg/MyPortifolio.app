@@ -1,16 +1,23 @@
 .contacts {
   width: 100%;
+  margin: 10px auto;
+}
+
+@media only screen and (min-width: 426px) {
+  .contacts {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
   .contacts {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .contacts {
-    margin-top: 50px;
+    margin-top: 90px;
   }
 }
 
@@ -432,23 +439,24 @@
 
 .projects {
   width: 100%;
+  margin: 10px auto;
 }
 
 @media only screen and (min-width: 426px) {
   .projects {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .projects {
-    margin-top: 0px;
+    margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .projects {
-    margin-top: 0px;
+    margin-top: 90px;
   }
 }
 
@@ -697,23 +705,24 @@
 
 .services {
   width: 100%;
+  margin: 10px auto;
 }
 
 @media only screen and (min-width: 426px) {
   .services {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .services {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .services {
-    margin-top: 50px;
+    margin-top: 90px;
   }
 }
 
@@ -866,6 +875,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 40px auto;
 }
 
 @media only screen and (min-width: 426px) {
@@ -1037,7 +1047,7 @@
 
 @media only screen and (min-width: 426px) {
   .skills__card-container {
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
@@ -1050,7 +1060,7 @@
 
 @media only screen and (min-width: 769px) {
   .skills__card-container {
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -1063,7 +1073,7 @@
 
 @media only screen and (min-width: 1025px) {
   .skills__card-container {
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -1147,7 +1157,7 @@
 
 @media only screen and (min-width: 426px) {
   .skills .lanimages {
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
@@ -1160,7 +1170,7 @@
 
 @media only screen and (min-width: 769px) {
   .skills .lanimages {
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -1173,7 +1183,7 @@
 
 @media only screen and (min-width: 1025px) {
   .skills .lanimages {
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -1192,7 +1202,7 @@
 @media only screen and (min-width: 426px) {
   .skills__category {
     margin: 0 auto;
-    height: 70vh;
+    max-height: 70vh;
     overflow-y: scroll;
   }
   .skills__category::-webkit-scrollbar {
@@ -1203,7 +1213,7 @@
 @media only screen and (min-width: 769px) {
   .skills__category {
     margin: 0 auto;
-    height: 70vh;
+    max-height: 70vh;
     overflow-y: scroll;
   }
   .skills__category::-webkit-scrollbar {
@@ -1214,7 +1224,7 @@
 @media only screen and (min-width: 1025px) {
   .skills__category {
     margin: 0 auto;
-    height: 70vh;
+    max-height: 70vh;
     overflow-y: scroll;
   }
   .skills__category::-webkit-scrollbar {

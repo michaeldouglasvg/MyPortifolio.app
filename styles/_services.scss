@@ -1,14 +1,15 @@
 
 .services{
     width: 100%;
+    margin: 10px auto;
     @media only screen and (min-width: 426px){
-       margin-top: 20px;      
+       margin-top: 50px;      
      }
      @media only screen and (min-width: 769px){
-       margin-top: 40px;
+       margin-top: 80px;
      }
      @media only screen and (min-width: 1025px){
-       margin-top: 50px;
+        margin-top: 90px;
      }
 
     &__title{
