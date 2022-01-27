@@ -1438,30 +1438,6 @@
 .skills__category-container .toggle .show-text {
   width: 96%;
   margin: 5px auto;
-}
-
-.skills__category-container .toggle .show-text p {
-  padding: .6rem auto;
-  width: 100%;
-  color: var(--secondaryColor);
-  padding-bottom: 5px;
-  font-style: italic;
-}
-
-.skills__category-container .toggle .show-text .card-images {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  margin: 0 auto;
-}
-
-.skills__category-container .toggle .show-text .card-images img {
-  width: 60px;
-  height: 60px;
-  max-height: 80px;
-  max-width: 80px;
-  margin-top: 4px;
-  border-radius: 4px;
+  display: block;
 }
 /*# sourceMappingURL=import.css.map */

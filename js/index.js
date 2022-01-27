@@ -140,29 +140,127 @@ btnshowlanguages.addEventListener("click", function(){
 });
 
 
-const expBtn = document.querySelectorAll(".experiencebtn");
 
-expBtn.forEach(function(skill){
+// image FAQ pazzle
+const faqContainer = document.querySelector(".toggle");
+const faqQuizes = [
+    {
+        id: 1,
+        h1: "Backend Development Technology",
+        pExperience: "Experience of more than 2years",
+        images: [
+            {
+                id: 1, 
+                image: "../images/Languages/php.png",
+            },
+            {
+                id: 2, 
+                image: "../images/Languages/MySQL.png",
+            },
+            {
+                id: 3, 
+                image: "../images/Languages/laravel.png",
+            },
+            {
+                id: 4, 
+                image: "../images/Languages/python.png",
+            },
+        ],
+    },
+    {
+        id: 2,
+        h1: "Front end Development Technology",
+        pExperience: "Experience of more than 3years",
+        images: [
+            {
+                id: 1, 
+                image: "../images/Languages/Vue.png",
+            },
+            {
+                id: 2, 
+                image: "../images/Languages/React.png",
+            },
+            {
+                id: 3, 
+                image: "../images/Languages/go.png",
+            },
+            {
+                id: 4, 
+                image: "../images/Languages/CSS.png",
+            },
+            {
+                id: 5, 
+                image: "../images/Languages/Angular.png",
+            },
+            {
+                id: 6, 
+                image: "../images/Languages/JavaScript.png",
+            },
+        ],
+    },
+    {
+        id: 3,
+        h1: "Mobile app Development Technology",
+        pExperience: "Experience of more than 6months",
+        images: [
+            {
+                id: 1, 
+                image: "../images/Languages/C++.png",
+            },
+            {
+                id: 2, 
+                image: "../images/Languages/flutter.jpg",
+            },
+            {
+                id: 3, 
+                image: "../images/Languages/kotlin.jpg",
+            },
+            {
+                id: 4, 
+                image: "../images/Languages/React.png",
+            },
+        ],
+    },
+];
 
-    skill.addEventListener("click", function(e){
+function showTechnologiesExperience(image){
 
-        e.preventDefault();
+    let expImageLanguage = image.map(function(faq){
 
-        const currentelement = e.currentTarget.parentElement.querySelector(".expdisplay");
+        return `
+        <span class="toggle">
+            <div class="top-section experiencebtn">
+                <h1 class="title">${faq.h1}</h1>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="bottom-text expdisplay">
+                <p>${faq.pExperience}</p>
+                <div class="card-images">
+                    <img src=${faq.images[0].image} alt="images" height="30px">
+                    <img src=${faq.images[1].image} alt="images" height="30px">
+                    <img src=${faq.images[2].image} alt="images" height="30px">
+                    <img src=${faq.images[3].image} alt="images" height="30px">
+                </div>
+            </div>
+         </span>
+        `;
+    });
+    console.log(expImageLanguage);
+    expImageLanguage = expImageLanguage.join("");
+    faqContainer.innerHTML = expImageLanguage;
 
-        if(currentelement.style.display == "none"){
+    const expBtn = document.querySelectorAll(".experiencebtn");
 
-            currentelement.style.display = "block";
+    expBtn.forEach(function(skill){
+
+        skill.addEventListener("click", function(e){
+            const currentelement = e.currentTarget.parentElement.querySelector(".expdisplay");
+            currentelement.classList.toggle("show-text");
             e.currentTarget.parentElement.querySelector("i").classList.toggle("flipchevronup");
 
-        }else{
-
-            currentelement.style.display = "none";
-            e.currentTarget.parentElement.querySelector("i").classList.remove("flipchevronup");
-        }
-
+        });
     });
-});
+}
 
 
 
@@ -355,14 +453,14 @@ const singleCard = [
         serviceEmail: "mailto:douglas1999michael@gmail.com?Subject:Requesting your service for tensorflow to solve my work",
     },
     {
-        id: 1,
+        id: 2,
         serviceImage: "../images/services/appa.jpg",
         serviceDesc: "I use flutter for app development since it is a crossplatform functionality, is light weight and easy to learn to develope applicationa and deploy",
         serviceCall: "tel:+254712176534",
         serviceEmail: "mailto:douglas1999michael@gmail.com?Subject:Use flutter of Kotlin to make an app for me",
     },
     {
-        id: 1,
+        id: 3,
         serviceImage: "../images/services/git.png",
         serviceDesc: "Proving web technology services like pull, push, deploying site and maintainance. Creating different modules to solve different real world problems",
         serviceCall: "tel:+254712176534",
@@ -405,6 +503,7 @@ window.addEventListener("DOMContentLoaded", function(){
     displayLanguages(lanImages);
     displayProjects(projectCard);
     displayServices(singleCard);
+    showTechnologiesExperience(faqQuizes);
 });
 
 const helpCenter = document.getElementById("helpcenter");
