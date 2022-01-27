@@ -300,6 +300,17 @@
   border-bottom: 4px solid blue;
 }
 
+@media only screen and (min-width: 800px) {
+  .helpcenter {
+    position: fixed;
+    top: 60px;
+    right: -100px;
+    width: 500px;
+    max-width: 800px;
+    padding: 1rem 2rem;
+  }
+}
+
 .helpcenter::-webkit-scrollbar {
   display: none;
 }
@@ -311,26 +322,13 @@
 
 .helpcenter__display-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 4px auto;
+  margin: 5px auto;
 }
 
 .helpcenter__top-links {
   width: 100%;
   height: 30px;
-  margin: 5px auto;
+  margin: 0px auto;
   position: -webkit-sticky;
   position: sticky;
   top: -12px;
@@ -344,28 +342,53 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 .4rem;
+  padding: 0 2rem;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
-.helpcenter__top-links a {
-  padding: .4rem 1rem;
-  background: blue;
+.helpcenter__top-links .btncenter {
+  padding: .6rem 1rem;
   color: white;
+  background: blue;
   border-radius: 3px;
 }
 
-.helpcenter__contsnt {
-  width: 100%;
-  margin: 10px auto;
-  padding: 0 .6rem;
+.helpcenter__top-links .active {
+  background: white;
+  color: black;
+  font-weight: 600;
 }
 
-.helpcenter__contsnt p {
+.helpcenter__content {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: -30px;
+}
+
+.helpcenter__content p {
   font-size: 13px;
   color: #3a3a3a;
   line-height: 1.5rem;
+}
+
+.helpcenter__content .content {
+  width: 100%;
+  background: white;
+  display: none;
+}
+
+.helpcenter__content .content h1 {
+  background: white;
+}
+
+.helpcenter__content .content p {
+  background: white;
+}
+
+.helpcenter__content .active {
+  background: white;
+  display: inline-block;
 }
 
 .showHelp {
@@ -384,6 +407,17 @@
   padding: 1rem 0rem;
   -webkit-animation: front .3s ease-in forwards;
           animation: front .3s ease-in forwards;
+}
+
+@media only screen and (min-width: 800px) {
+  .showHelp {
+    position: fixed;
+    top: 50px;
+    right: -100px;
+    width: 600px;
+    max-width: 800px;
+    padding: 1rem 2rem;
+  }
 }
 
 @-webkit-keyframes front {

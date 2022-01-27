@@ -262,9 +262,6 @@ function showTechnologiesExperience(image){
     });
 }
 // end of FAQ
-
-
-
 // languages image autoloader/ dynamics
 const lanImages = [
     {
@@ -506,7 +503,34 @@ window.addEventListener("DOMContentLoaded", function(){
 });
 
 const helpCenter = document.getElementById("helpcenter");
-
+const btnHelpCent = document.querySelectorAll(".btncenter");
+const displayHelpCent = document.querySelectorAll(".content");
 function myInfor(){
     helpCenter.classList.toggle("showHelp");
 }
+
+helpCenter.addEventListener("click", function(e){
+    e.preventDefault();
+    const currentTarget = e.target.dataset.id;
+    const currentbtn = e.target;
+
+    if(currentTarget){
+        // remove the avtive class for all of the buuttons
+        btnHelpCent.forEach(function(helpBtn){
+
+            helpBtn.classList.remove("active");
+            currentbtn.classList.add("active");
+
+        });
+
+        // remove the active class for all the display divisions
+        displayHelpCent.forEach(function(helpDisplay){
+
+            helpDisplay.classList.remove("active");
+        });
+        
+        const currentDisplay = document.getElementById(currentTarget);
+        currentDisplay.classList.add("active");
+    }
+    
+});

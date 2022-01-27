@@ -13,6 +13,14 @@
     padding: 1rem 0rem;
     border-top: 4px solid blue;
     border-bottom: 4px solid blue;
+    @media only screen and (min-width: 800px){
+        position: fixed;
+        top: 60px;
+        right: -100px;
+        width: 500px;
+        max-width: 800px;
+        padding: 1rem 2rem;
+    }
     &::-webkit-scrollbar{
         display: none;
     }
@@ -24,42 +32,60 @@
 
     &__display-container{
        width: 100%;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: space-between;
-       margin: 4px auto;
+       margin: 5px auto;
     }
 
     &__top-links{
         width: 100%;
         height: 30px;
-        margin: 5px auto;
+        margin: 0px auto;
         position: sticky;
         top: -12px;
         z-index: 99;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 .4rem;
+        padding: 0 2rem;
         transition: all 500ms;
 
-        a{
-            padding: .4rem 1rem;
-            background: blue;
+        .btncenter{
+            padding: .6rem 1rem;
             color: white;
+            background: blue;
             border-radius: 3px;
+        }
+        .active{
+           background: white;
+           color: black;
+           font-weight: 600;
         }
     }
 
-    &__contsnt{
+    &__content{
         width: 100%;
-        margin: 10px auto;
-        padding: 0 .6rem;
+        margin: 0px auto;
+        margin-top: -30px;
         p{
             font-size: 13px;
             color: rgb(58, 58, 58);
             line-height: 1.5rem;
+        }
+
+        .content{
+            width: 100%;
+            background: white;
+            display: none;
+            h1{
+                  background: white;
+            }
+            p{
+                background: white;  
+            }
+        }
+
+        .active{
+            background: rgb(255, 255, 255);
+            display: inline-block;
         }
     }
 }
@@ -78,6 +104,14 @@
     border-radius: 4px;
     padding: 1rem 0rem;
     animation: front .3s ease-in forwards;
+    @media only screen and (min-width: 800px){
+        position: fixed;
+        top: 50px;
+        right: -100px;
+        width: 600px;
+        max-width: 800px;
+        padding: 1rem 2rem;
+    }
     @keyframes front {
         from{
            transform: scale(.8);
