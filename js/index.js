@@ -40,11 +40,6 @@ if(localStorage.getItem('dark-mode') == 'enabled'){
 
 // localStorage.removeItem('darkMode');
 // localStorage.clear(); //The syntax for removing all the localStorage items
-
-function myInfor(){
-    alert("Hi, Am Michael Douglas. Build this portifolio in basis of HTML5, CSS3, JS and Libraries");
-}
-
 // navigation section
 function showMenu(){
 
@@ -411,3 +406,9 @@ window.addEventListener("DOMContentLoaded", function(){
     displayProjects(projectCard);
     displayServices(singleCard);
 });
+
+const helpCenter = document.getElementById("helpcenter");
+
+function myInfor(){
+    helpCenter.classList.toggle("showHelp");
+}
