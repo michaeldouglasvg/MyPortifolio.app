@@ -245,7 +245,7 @@ function showTechnologiesExperience(image){
          </span>
         `;
     });
-    console.log(expImageLanguage);
+
     expImageLanguage = expImageLanguage.join("");
     faqContainer.innerHTML = expImageLanguage;
 
@@ -261,6 +261,7 @@ function showTechnologiesExperience(image){
         });
     });
 }
+// end of FAQ
 
 
 
@@ -405,7 +406,6 @@ function displayProjects(items){
                 <p>${singleProject.projectTitle}</p>
                 <img src=${singleProject.projectImage} alt="project image" height="100px">
                 <div class="info">
-                    <a href="" class="language">Language used <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a>
                     <a href="${singleProject.projectLink}"><i class="fa fa-link"></i></a>
                 </div>
             </div>
@@ -439,7 +439,6 @@ function displayProjects(items){
 
     projectContainer.innerHTML = contents;
 }
-
 
 
 // services container

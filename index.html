@@ -14,6 +14,7 @@
     <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet"> -->
 </head>
 <body>
+    <!-- page loader/ on content loaded dissapears -->
     <div class="loader">
         <img src="images/logo/mylogo.png" alt="Gtechamour">
     </div>
@@ -47,6 +48,7 @@
             <i class="fa fa-moon-o" onclick="darkMode()" id="dmode"></i>
         </div>
     </div>
+    <!-- main conent section -->
     <div class="content" id="scroll">
         <!--===== start of the home section =====-->
         <div class="home" id="home">
@@ -79,37 +81,12 @@
                         </h1>
                         <div class="skills__card-container lanimages">
                             <!-- dynamic loading -->
-                            <span class="card">
-                                <img src="" alt="language image" height="40px">
-                                <p></p>
-                            </span>
-
                         </div>
                     </div>
                     <div class="skills__category">
                         <h1 class="types">My Categories</h1>
                         <div class="skills__category-container">
-                            <!-- Content loaded dynamically -->
-                            <span class="toggle">
-                                <div class="top-section experiencebtn">
-                                    <h1 class="title"></h1>
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                                <div class="bottom-text expdisplay">
-                                    <p></p>
-                                    <div class="card-images">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                        <img src="images/logo/mylogo.png" alt="images" height="30px">
-                                    </div>
-                                </div>
-                            </span>
-                            
+                            <!-- Content loaded dynamically --> 
                         </div>
                     </div>
                 </div>
@@ -121,38 +98,6 @@
             <h1 class="projects__title">My Projects</h1>
             <div class="projects__container-projects" id="projectcontainer">
                 <!-- dynamic content loading -->
-                <div class="projects__main-card">
-                    <div class="projects__image-link">
-                        <p>To-do app</p>
-                        <img src="images/logo/mylogo.png" alt="project image" height="100px">
-                        <div class="info">
-                            <a href="" class="language">Language used <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a>
-                            <a href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects__project-description cardback">
-                       <div class="top">
-                           <div class="left">
-                               <p>Category: Website</p>
-                               <p>Size: 70MB</p>
-                               <p>Deployed on: netlify</p>
-                           </div>
-                           <div class="right">
-                               <h1>Languages</h1>
-                               <span>
-                                   <p>Javascript</p>
-                                   <p>PHP</p>
-                                   <p>MySQL</p>
-                               </span>
-                           </div>
-                       </div>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero porro maxime sapiente cupiditate tenetur.</p>
-                        <div class="bottom">
-                            <i class="fa fa-chevron-left backpress"> Back</i>
-                            <a href="">Link<i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- end of projects page -->
@@ -161,15 +106,6 @@
             <h1 class="services__title">My Services</h1>
             <div class="services__service-container" id="serviceContainer">
                 <!-- dynamic loading -->
-                <div class="services__card-container">
-                    <img src="images/logo/mylogo.png" alt="service imsge" height="100px">
-                    <p class="servicedescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolores nesciunt quibusdam nihil sit placeat magni quae. Mollitia, commodi qui! Voluptas optio similique alias, dolor totam qui. Officiis, voluptas iure!</p>
-                    <div class="contact">
-                        <a href=""><i class="fa fa-phone"></i>Call</a>
-                        <a href=""><i class="fa fa-envelope"></i>Request Service</a>
-                    </div>
-                </div>
-                
             </div>
         </div>
         <!-- end of service page -->
@@ -265,6 +201,7 @@
         </div>
         <!-- end of contact page -->
     </div>
+    <!-- Widow pop up for small screens -->
     <div class="window">
         <div class="window__pop" id="toggle">
             <div class="window__main">
@@ -300,7 +237,6 @@
             <i class="fa fa-server" onclick="showMenu()"></i>
         </div>
     </div>
-
     <!-- socio-links -->
     <div class="activatemedia" onclick="showMedia()">
         <i class="fa fa-chevron-left" id="mediaIcon"></i>
