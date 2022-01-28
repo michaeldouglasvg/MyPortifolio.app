@@ -22,7 +22,7 @@ function darkMode(){
 
     if(document.body.classList.contains("dark-mode")){
 
-        document.getElementById("dmode").className = "fa fa-sun-o";
+        document.getElementById("dmode").className = "fa fa-certificate";
         localStorage.setItem('dark-mode', 'enabled');
     }else{
 
