@@ -536,4 +536,104 @@ helpCenter.addEventListener("click", function(e){
 });
 
 // help center js
+const helpElement = document.getElementById("helpNavigation");
+// navigation
+const arrayNavigation = [
+    {
+        title: "Home page",
+        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+    },
+    {
+        title: "Skills Page",
+        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+    },
+    {
+        title: "Project page",
+        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+    },
+    {
+        title: "Service Page",
+        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+    },
+    {
+        title: "Contact Page",
+        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+    },
+];
 
+function displayHelpGuide(item){
+
+    let singleHelp = item.map(function(singleItemHelp){
+
+        return`
+            <h2 class="category">${singleItemHelp.title}</h2>
+            <p>${singleItemHelp.text}</p>
+        `;
+    });
+
+    singleHelp = singleHelp.join("");
+    helpElement.innerHTML = singleHelp;
+}
+
+// terms
+const helpElementTerms = document.getElementById("helpTerms");
+const arrayTerms = [
+    {
+        title: "About our services",
+        text: "We dont store client information nor get to view your data",
+    },
+    {
+        title: "About our services",
+        text: "We dont store client information nor get to view your data",
+    },
+    {
+        title: "About our services",
+        text: "We dont store client information nor get to view your data",
+    },
+    {
+        title: "About our services",
+        text: "We dont store client information nor get to view your data",
+    },   
+];
+function displayHelpTerms(item){
+
+    let singleHelp = item.map(function(singleItemHelp){
+
+        return`
+            <h2 class="category">${singleItemHelp.title}</h2>
+            <p>${singleItemHelp.text}</p>
+        `;
+    });
+
+    singleHelp = singleHelp.join("");
+    helpElementTerms.innerHTML = singleHelp;
+}
+
+// policies
+const helpElementPolicies = document.getElementById("helpPolicies");
+const arrayPolicies = [
+    {
+        title: "How we share content",
+        text: "We dont store client information nor get to view your data",
+    },
+    
+];
+function displayHelpPolicies(item){
+
+    let singleHelp = item.map(function(singleItemHelp){
+
+        return`
+            <h2 class="category">${singleItemHelp.title}</h2>
+            <p>${singleItemHelp.text}</p>
+        `;
+    });
+
+    singleHelp = singleHelp.join("");
+    helpElementPolicies.innerHTML = singleHelp;
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+    displayHelpGuide(arrayNavigation);
+    displayHelpTerms(arrayTerms);
+    displayHelpPolicies(arrayPolicies);
+});
