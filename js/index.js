@@ -534,3 +534,6 @@ helpCenter.addEventListener("click", function(e){
     }
     
 });
+
+// help center js
+

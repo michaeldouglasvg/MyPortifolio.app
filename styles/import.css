@@ -391,6 +391,178 @@
   display: inline-block;
 }
 
+.helpcenter__content #navigation {
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+}
+
+.helpcenter__content #navigation h1 {
+  width: 100%;
+  background: white;
+  font-size: 20px;
+  padding: .6rem auto;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #navigation .title {
+  font-size: 14px;
+  color: orangered;
+  padding: 5px;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #navigation .category {
+  width: 100%;
+  padding: 1rem auto;
+  font-size: 15px;
+  margin-top: 10px;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #navigation p {
+  line-height: 1.5rem;
+  font-size: 13px;
+  color: #4d4b4b;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #navigation .name {
+  width: 100%;
+  padding: 1rem auto;
+  font-size: 13px;
+  margin-top: 10px;
+  background: white;
+  padding-left: 1rem;
+  font-weight: 500;
+}
+
+.helpcenter__content #navigation form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.helpcenter__content #navigation form input {
+  padding: .6rem .2rem;
+  outline: none;
+  border: 1px solid #b5aeae;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.helpcenter__content #navigation form textarea {
+  padding: .4rem auto;
+  outline: none;
+  width: 90%;
+  margin-top: .2rem;
+}
+
+.helpcenter__content #navigation form button {
+  padding: .8rem 1.2rem;
+  outline: none;
+  background: orange;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.helpcenter__content #terms {
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+}
+
+.helpcenter__content #terms h1 {
+  width: 100%;
+  background: white;
+  font-size: 20px;
+  padding: .6rem auto;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #terms .title {
+  font-size: 14px;
+  color: orangered;
+  padding: 5px;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #terms .category {
+  width: 100%;
+  padding: 1rem auto;
+  font-size: 15px;
+  margin-top: 10px;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #terms p {
+  line-height: 1.5rem;
+  font-size: 13px;
+  color: #4d4b4b;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #policies {
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+}
+
+.helpcenter__content #policies h1 {
+  width: 100%;
+  background: white;
+  font-size: 20px;
+  padding: .6rem auto;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #policies .title {
+  font-size: 14px;
+  color: orangered;
+  padding: 5px;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #policies .category {
+  width: 100%;
+  padding: 1rem auto;
+  font-size: 15px;
+  margin-top: 10px;
+  background: white;
+  padding-left: 1rem;
+}
+
+.helpcenter__content #policies p {
+  line-height: 1.5rem;
+  font-size: 13px;
+  color: #4d4b4b;
+  background: white;
+  padding-left: 1rem;
+}
+
 .showHelp {
   width: 290px;
   height: 400px;
