@@ -490,6 +490,15 @@ const contactguide = document.getElementById("contactdes");
 contactguide.textContent = "Are you in need to know to technical status, please visit the more information section, for further follow up you can use contact form, Please enter your valid details that can be used to reach to you incase of any reply or comment. Thanks for visitting my site"
 ;
 
+// contact for js
+function validateContactForm(){
+    
+    let formName = document.forms["form"]["name"].value;
+
+    console.log(formName);
+    return false;
+}
+
 
 
 document.getElementById("formconfirm").textContent = "By Pressing the send button, you agree to the terms and policies under GtechAmour developers. Cancel by resetting the form.";
@@ -542,6 +551,10 @@ const arrayNavigation = [
     {
         title: "Home page",
         text: "Header section: Traverse through the logo, navigation links and toggle theme. Theme applied is stored under local storage in your browser, meaning when you close your browser and upon opening it up again, the last recently used theme will apply as the current theme in action. Under home page, click Download CV to get access to my CV document, Upon clicking Hire me, it will direct you to the contact page...for where you will contact your service from."
+    },
+    {
+        title: "Right arrow (sociomedia)",
+        text: "Toogle the arrow, located on your right hand side of the main window for more information about my social-media platforms. Click any Icon for accessing the services and requirements that it offers under that media categoty. Thanks for finding your best."
     },
     {
         title: "Skills Page",
