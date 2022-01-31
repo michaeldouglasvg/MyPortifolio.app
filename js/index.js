@@ -491,13 +491,13 @@ contactguide.textContent = "Are you in need to know to technical status, please 
 ;
 
 // contact for js
-function validateContactForm(){
+// function validateContactForm(){
     
-    let formName = document.forms["form"]["name"].value;
+//     let formName = document.forms["form"]["name"].value;
 
-    console.log(formName);
-    return false;
-}
+//     console.log(formName);
+//     return false
+// }
 
 
 
