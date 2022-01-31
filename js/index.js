@@ -3,17 +3,7 @@ const myLoader = document.querySelector(".loader");
 
 window.addEventListener("load", function(){
     myLoader.classList.add("hideloader");
-})
-
-
-// navigation scroll events
-// let mainScrolldiv = document.getElementById("scroll");
-// mainScrolldiv.addEventListener("scroll", event => {
-   
-//     let scroll = mainScrolldiv.scrollTop();
-
-//     alert(scroll);
-// })
+});
 
 // toggle dak mode
 function darkMode(){
@@ -73,7 +63,7 @@ function showMedia(){
 
 // cv download functionality
 function cvdownload(){
-    alert("Oops, The CV you want to download is not yet uploaded, please use contact form and you will get the notification through your email, when it is uploaded. Thanks for your kindness. Terms and condition applied.")
+    alert("Oops!!! the document is being updated, will be out soon for download, The document will consist upto-date information. Keep revisiting the site for more information. Thanks for using my products.")
 }
 
 
@@ -117,14 +107,14 @@ setInterval(displayTime, 10);
 
 // home page js
 const homeMessage = document.getElementById("mymessage");
-homeMessage.textContent = "Hi, am a student at South Easter Kenya University. Pursuing Computer Science (CS), am optimized in technology. Providing optimum solutions to complex technical problems. Ready to learn and master from the solutions, and change in technology.";
+homeMessage.textContent = "Hi, am a student at South Easter Kenya University. At 22, Learning Computer Science (CS) to advanced level, I optimize my productivity in technology. Providing optimum solutions to complex technical problems. Ready to learn and master from the complex problems rational to their own unique solutions. Ready to work with anyone to advance my skills and solve technical problems together. To learn and advance is my opportunity.";
 
 
 
 
 // skills page
 const skillspage = document.getElementById("skillpage");
-skillspage.textContent = "Learning is one of my favorite to provide possible solutions, Different languages I use provides different solutions for different problems. Rapid change in technology requires practice and much more to master step by step. Here are some of my skills learning and mastering them is what is do";
+skillspage.textContent = "Learning different technologies, practicing day by day, putting it to more advanced practice through group works as a leader, managing small individuals that are ready to solve the real world problems is what I do at community level. Helping one when stuck to solve a technical problems. Using HTML, JavaScripts and its framework, PHP for server side scripting and Python for tensor flow model implimentation and training. The technical skills are as shown below, Some learning to advanced level and some intermediate also some as a begginer. Technology curve compared to market flux is demanding, My pleasure to learn new technical skills  to advanced level to help people.";
 
 const btnshowlanguages = document.getElementById("showlanguage");
 const lanIcon = document.querySelector(".lanicons");
@@ -147,7 +137,7 @@ const faqQuizes = [
     {
         id: 1,
         h1: "Backend Development Technology",
-        pExperience: "Experience of more than 2years",
+        pExperience: "Experience of more than 11/2years",
         images: [
             {
                 id: 1, 
@@ -364,7 +354,7 @@ const projectCard = [
         langone: "JavaScript",
         langTwo: "PHP",
         langThree: "MySQL",
-        projectDesc: "This was to keep the personal task that are yet to be done, and when done, you can mark and it will track your work",
+        projectDesc: "Is a web based application to track your daily tasks, Complited, uncomplited and also you can delete task",
     },
     {
         id: 1,
@@ -390,7 +380,7 @@ const projectCard = [
         langone: "JavaScript",
         langTwo: "PHP",
         langThree: "MySQL",
-        projectDesc: "Was my main webpage that people may find time to learn more about my programming skills and much more",
+        projectDesc: "Web based application to show my skill level, interracting with people and learning more from my work and technologies",
     },
 ];
 function displayProjects(items){
