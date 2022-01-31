@@ -541,23 +541,23 @@ const helpElement = document.getElementById("helpNavigation");
 const arrayNavigation = [
     {
         title: "Home page",
-        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+        text: "Header section: Traverse through the logo, navigation links and toggle theme. Theme applied is stored under local storage in your browser, meaning when you close your browser and upon opening it up again, the last recently used theme will apply as the current theme in action. Under home page, click Download CV to get access to my CV document, Upon clicking Hire me, it will direct you to the contact page...for where you will contact your service from."
     },
     {
         title: "Skills Page",
-        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+        text: "This page contaons the available language have learn and some mastered and others still getting in depth. The left side displays langugage in general, Click 'My Languages' to expand and see in details, The right hand side is a section that displays the Category, Click specific content and will open for you to see the languages that I apply in different areas to solve different technical problems",
     },
     {
         title: "Project page",
-        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+        text: "This page displays the available projects that have worked on and are successful, The card contains the project image as in real world, under the image Is the Icon that when you click it opens the project to a new window, for you to explore much on that specific project",
     },
     {
         title: "Service Page",
-        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+        text: "This page contains cards each having the image of the services for easy identification, Text that you can read for clarity and the bottom contact section on the same card, for syncronous contact Click the call Icon that will direct you through a voice call, and for asynchronous communication, on that doe not need immediate replies use Send mail and will be answered as long as is set. All the ways are acceptible while rewuesting my services",
     },
     {
         title: "Contact Page",
-        text: "Combined size of file uploads completed via form handling in the current billing period.. Combined submissions across all forms on your site in the current billing period."
+        text: "If you are in nned of knowing more about me in the background, use 'More info' section, View my location and other services provided there...except the call and email that will get your contact, For special contacts and rewuest please use 'Get Intouch' section, which we can communicate and fix your problem in real time. Thanks for visiting my site and services."
     },
 ];
 
@@ -579,20 +579,20 @@ function displayHelpGuide(item){
 const helpElementTerms = document.getElementById("helpTerms");
 const arrayTerms = [
     {
-        title: "About our services",
-        text: "We dont store client information nor get to view your data",
+        title: "What I expect from you...",
+        text: "To View my work, ask any question and it will get answered through your email by using the contact form, Suggest a better way to improve my products, Your concern, comment and suggestion will be hadnled appropriately. If you grind to a halt, am here to help you through solving technical problems. Learning and solving your problems in a unique way. For more your demands please use the contact form",
     },
     {
-        title: "About our services",
-        text: "We dont store client information nor get to view your data",
+        title: "What you expext from me",
+        text: "I develope software products that can solve real world problems in technology, I offer a variety of services across the technonoly fields such as Fullstack development, Machine learning and other tools like Linux systems, Git & GitHub push and pull request. Developing appplications using different languages since different problems must be solved with the available technology resources. To learn more please request the service you need me to offer and will confirm through your email. Only available if you can use the contact form.",
     },
     {
-        title: "About our services",
-        text: "We dont store client information nor get to view your data",
+        title: "Know how your data is used",
+        text: "Upon using the contact form, and other forms in my portifolio web page, For contact form, all the fields mentioned will appear through my email as you have contacted, Using other forms available in this portifolio like the one under navigation > send your feedback will only display your messaage and email incase there is need to reply to you. Other formal data like your Web suffing activvities will be stored localy on your machine or your browser history. I dont share your data, instead will be agreement between me and you as my client.",
     },
     {
-        title: "About our services",
-        text: "We dont store client information nor get to view your data",
+        title: "What is contained in this portifolio",
+        text: "First, is common to know that security is the best concern while dealing with your loyal customers, this links is much secure hosted in netlify database , your data is secure, The portifolio is still under development and thus I suggest you give time to things that are doing wrong on your side, will be fixed soon. As soon as the final version will be out, ypu will get notified only if I HAVE YOUR CONTACT DETAILS such as the Email address.",
     },   
 ];
 function displayHelpTerms(item){
@@ -613,8 +613,8 @@ function displayHelpTerms(item){
 const helpElementPolicies = document.getElementById("helpPolicies");
 const arrayPolicies = [
     {
-        title: "How we share content",
-        text: "We dont store client information nor get to view your data",
+        title: "Information management",
+        text: "Please, be specific with the question and information your share about yourself under this platform, do not provide unrelated information because it will be used as the key information to find your, provide my service and other technical issues. Use of false information as a customer will break the links and terms of service.",
     },
     
 ];
