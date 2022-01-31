@@ -477,21 +477,14 @@ function displayServices(service){
 
 // contact js
 const contactguide = document.getElementById("contactdes");
-contactguide.textContent = "Are you in need to know to technical status, please visit the more information section, for further follow up you can use contact form, Please enter your valid details that can be used to reach to you incase of any reply or comment. Thanks for visitting my site"
+contactguide.textContent = "Have created the possible solution for you to learn more from me, or get intouch incase you have any issue that need to be solved. The 'More info' section, use this area to explore much regarding my details such as location, website, write emails and direct call is allowed if in need of point-to-point communication. The 'Get Intouch' section is a form that you may need to use for contacting either to issue a comment or to get connected for approval of your requests. Please use your valid details incase of any feedback you can get through your contact information like the email address. You can chose to upload the file for more clarity or Ignore, this part is optional for all clients."
 ;
 
 // contact for js
-// function validateContactForm(){
-    
-//     let formName = document.forms["form"]["name"].value;
-
-//     console.log(formName);
-//     return false
-// }
 
 
 
-document.getElementById("formconfirm").textContent = "By Pressing the send button, you agree to the terms and policies under GtechAmour developers. Cancel by resetting the form.";
+document.getElementById("formconfirm").textContent = "By pressing the send button, you agree that the information entered is valid, otherwise use 'Clear form' button to reset the form to default state.";
 
 // loading the different kinds of modules
 window.addEventListener("DOMContentLoaded", function(){
@@ -544,23 +537,23 @@ const arrayNavigation = [
     },
     {
         title: "Right arrow (sociomedia)",
-        text: "Toogle the arrow, located on your right hand side of the main window for more information about my social-media platforms. Click any Icon for accessing the services and requirements that it offers under that media categoty. Thanks for finding your best."
+        text: "Toogle the arrow, located on your right hand side of the main window for more information about my social-media platforms. Click any Icon for accessing the services and requirements that it offers under that media categoty. Thanks for visiting my platforms.",
     },
     {
         title: "Skills Page",
-        text: "This page contaons the available language have learn and some mastered and others still getting in depth. The left side displays langugage in general, Click 'My Languages' to expand and see in details, The right hand side is a section that displays the Category, Click specific content and will open for you to see the languages that I apply in different areas to solve different technical problems",
+        text: "This page contains the available language have learn and some mastered and others still getting in depth. The left side displays langugage in general, Click 'My Languages' to expand and see in details, The right hand side is a section that displays the Category, Click specific content and will open for you to see the languages that I apply in different areas to solve different technical problems",
     },
     {
         title: "Project page",
-        text: "This page displays the available projects that have worked on and are successful, The card contains the project image as in real world, under the image Is the Icon that when you click it opens the project to a new window, for you to explore much on that specific project",
+        text: "This page displays the available projects that have worked on and are successful, The card contains the project image as in real world interface, under the image is the icon that when you click it opens the project to a new window, for you to explore much on that specific project",
     },
     {
         title: "Service Page",
-        text: "This page contains cards each having the image of the services for easy identification, Text that you can read for clarity and the bottom contact section on the same card, for syncronous contact Click the call Icon that will direct you through a voice call, and for asynchronous communication, on that doe not need immediate replies use Send mail and will be answered as long as is set. All the ways are acceptible while rewuesting my services",
+        text: "This page contains cards each having the image of the services for easy identification, Text that you can read for clarity and the bottom contact section on the same card, for synchronous / point-to-point contact Click the call icon that will direct you through a voice call, and for asynchronous communication, on that doe not need immediate replies use Send mail and will be answered as long as is set. All ways are acceptible while requesting my services",
     },
     {
         title: "Contact Page",
-        text: "If you are in nned of knowing more about me in the background, use 'More info' section, View my location and other services provided there...except the call and email that will get your contact, For special contacts and rewuest please use 'Get Intouch' section, which we can communicate and fix your problem in real time. Thanks for visiting my site and services."
+        text: "If you are in need to know more about me in the background, use 'More info' section, View my location and other services provided there...except the call and email that will get your data to reflect through my email eg:-Your email address, For special contacts and request please use 'Get Intouch' section, which we can communicate and fix your problem in real time. Thanks for visiting my site and services."
     },
 ];
 
@@ -617,7 +610,7 @@ const helpElementPolicies = document.getElementById("helpPolicies");
 const arrayPolicies = [
     {
         title: "Information management",
-        text: "Please, be specific with the question and information your share about yourself under this platform, do not provide unrelated information because it will be used as the key information to find your, provide my service and other technical issues. Use of false information as a customer will break the links and terms of service.",
+        text: "Please, be specific with the question and information your share about yourself under this platform, do not provide unrelated information because it will be used as the key information to find your request and get feedback from me to your personal email address. Use of false information as a client will break the links of service term and privacy, Which may lead to your feedback from here be unreachable.",
     },
     
 ];
