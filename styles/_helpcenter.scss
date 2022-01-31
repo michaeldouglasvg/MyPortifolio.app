@@ -13,7 +13,7 @@
     padding: 1rem 0rem;
     border-top: 4px solid blue;
     border-bottom: 4px solid blue;
-    @media only screen and (min-width: 800px){
+    @media only screen and (min-width: 426px){
         position: fixed;
         top: 60px;
         right: -100px;
@@ -22,7 +22,10 @@
         padding: 1rem 2rem;
     }
     &::-webkit-scrollbar{
-        display: none;
+        width: 10px;
+        height: 30px;
+        background: orangered;
+        color: orangered;
     }
 
     .title{
@@ -49,15 +52,17 @@
         transition: all 500ms;
 
         .btncenter{
-            padding: .6rem 1rem;
-            color: white;
-            background: blue;
+            padding: .7rem 1rem;
+            color: rgb(3, 255, 238);
+            background: rgb(141, 74, 203);
             border-radius: 3px;
+            font-weight: 600;
         }
         .active{
-           background: white;
-           color: black;
-           font-weight: 600;
+            color: whitesmoke;
+            background: orangered;
+            font-weight: 600;
+            padding: .7rem 1rem;
         }
     }
 
@@ -67,43 +72,44 @@
         margin-top: -30px;
         p{
             font-size: 13px;
-            color: rgb(58, 58, 58);
+            color: var(--secondaryColor);
             line-height: 1.5rem;
         }
 
         .content{
             width: 100%;
-            background: white;
+            background: var(--primaryColor);
             display: none;
             h1{
-                  background: white;
+                background: var(--primaryColor);
             }
             p{
-                background: white;  
+                background: var(--primaryColor); 
             }
         }
 
         .active{
-            background: rgb(255, 255, 255);
+            background: var(--primaryColor);
             display: inline-block;
         }
 
         #navigation{
             width: 90%;
             margin: 0 auto;
-            background: rgb(255, 255, 255);
+            background: var(--primaryColor);
             h1{
                 width: 100%;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 font-size: 20px;
                 padding: .6rem auto;
                 padding-left: 1rem;
             }
             .title{
                 font-size: 14px;
-                color: orangered;
                 padding: 5px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             .category{
@@ -111,14 +117,15 @@
                 padding: 1rem auto;
                 font-size: 15px;
                 margin-top: 10px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             p{
                 line-height: 1.5rem;
                 font-size: 13px;
-                color: rgb(77, 75, 75);
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             .name{
@@ -126,7 +133,8 @@
                 padding: 1rem auto;
                 font-size: 13px;
                 margin-top: 10px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
                 font-weight: 500;
             }
@@ -137,6 +145,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                z-index: 1000;
                 input{
                     padding: .6rem .2rem;
                     outline: none;
@@ -153,14 +162,15 @@
                 input[type="submit"]{
                     padding: .8rem 1.2rem;
                     outline: none;
-                    background: orange;
-                    color: white;
+                    color: whitesmoke;
+                    background: rgb(2, 173, 34);
                     text-align: center;
                     font-weight: 600;
                     border: none;
                     border-radius: 3px;
                     margin-top: 1rem;
                     cursor: pointer;
+                    z-index: 1000;
                 }
             }
         }
@@ -168,19 +178,21 @@
         #terms{
             width: 90%;
             margin: 0 auto;
-            background: rgb(255, 255, 255);
+            color: var(--secondaryColor);
+            background: var(--primaryColor);
             h1{
                 width: 100%;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 font-size: 20px;
                 padding: .6rem auto;
                 padding-left: 1rem;
             }
             .title{
                 font-size: 14px;
-                color: orangered;
                 padding: 5px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             .category{
@@ -188,33 +200,36 @@
                 padding: 1rem auto;
                 font-size: 15px;
                 margin-top: 10px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             p{
                 line-height: 1.5rem;
                 font-size: 13px;
-                color: rgb(77, 75, 75);
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
         }
         #policies{
             width: 90%;
             margin: 0 auto;
-            background: rgb(255, 255, 255);
+            color: var(--secondaryColor);
+            background: var(--primaryColor);
             h1{
                 width: 100%;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 font-size: 20px;
                 padding: .6rem auto;
                 padding-left: 1rem;
             }
             .title{
                 font-size: 14px;
-                color: orangered;
                 padding: 5px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             .category{
@@ -222,14 +237,15 @@
                 padding: 1rem auto;
                 font-size: 15px;
                 margin-top: 10px;
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
             p{
                 line-height: 1.5rem;
                 font-size: 13px;
-                color: rgb(77, 75, 75);
-                background: rgb(255, 255, 255);
+                color: var(--secondaryColor);
+                background: var(--primaryColor);
                 padding-left: 1rem;
             }
         }
@@ -250,16 +266,31 @@
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
     border-radius: 4px;
     padding: 1rem 0rem;
-    animation: front .3s ease-in forwards;
-    @media only screen and (min-width: 800px){
+    animation: fronts .3s ease-in forwards;
+    @media only screen and (min-width: 426px){
         position: fixed;
         top: 50px;
         right: -100px;
         width: 600px;
         max-width: 800px;
         padding: 1rem 2rem;
+        animation: front .5s ease-in-out forwards;
     }
     @keyframes front {
+        from{
+           transform: scale(.1);
+           position: fixed;
+           top: -200px;
+           right: -400px;
+        }
+        to{
+            transform: scale(1);
+            position: fixed;
+            top: 50px;
+            right: -100px;
+        }
+    }
+    @keyframes fronts {
         from{
            transform: scale(.8);
         }
