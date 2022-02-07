@@ -64,7 +64,7 @@ window.addEventListener("scroll", function(){
 scrollBtn.addEventListener("click", function(e){
     e.preventDefault();
 
-    alert("Oops!!! this button is not functioning at the moment, I suggest your manually scroll to your page of interest, The algorithm of the button is under programming, Thanks for your KINDNESS, Goodbye.");
+    alert("Oops!!! this button is not functioning at the moment, I suggest you manually scroll to your page of interest, The algorithm of the button is under programming, Thanks for your KINDNESS, Goodbye.");
 
 });
 // localStorage.removeItem('darkMode');
@@ -102,7 +102,7 @@ function showMedia(){
 
 // cv download functionality
 function cvdownload(){
-    alert("Oops!!! the document is being updated, will be out soon for download, The document will consist upto-date information. Keep revisiting the site for more information. Thanks for using my products.")
+    alert("Oops!!! the document is being updated, will be out soon for download, The document will consist up-to-date information. Keep browsing the website to get new features. Thanks for your support.");
 }
 
 
@@ -572,7 +572,7 @@ const helpElement = document.getElementById("helpNavigation");
 const arrayNavigation = [
     {
         title: "Home page",
-        text: "Header section: Traverse through the logo, navigation links and toggle theme. Theme applied is stored under local storage in your browser, meaning when you close your browser and upon opening it up again, the last recently used theme will apply as the current theme in action. Under home page, click Download CV to get access to my CV document, Upon clicking Hire me, it will direct you to the contact page...for where you will contact your service from."
+        text: "Header section: Traverse through the logo, navigation links and toggle theme. Theme applied is stored under local storage in your browser, meaning when you close your browser and upon opening it up again, the last recently used theme will apply as the current theme in action. Under home page, click Download CV to get access to my CV document {Under implementation}, Upon clicking Hire me, it will direct you to the contact page...for where you will contact your service from."
     },
     {
         title: "Right arrow (sociomedia)",
@@ -592,7 +592,7 @@ const arrayNavigation = [
     },
     {
         title: "Contact Page",
-        text: "If you are in need to know more about me in the background, use 'More info' section, View my location and other services provided there...except the call and email that will get your data to reflect through my email eg:-Your email address, For special contacts and request please use 'Get Intouch' section, which we can communicate and fix your problem in real time. Thanks for visiting my site and services."
+        text: "If you are in need to know more about me in the background, use 'More info' section, View my location and other services provided there...except the call and email that will get your data to reflect through my email eg:-Your email address, For special contacts and request please use 'Get Intouch' section, which we can communicate and fix your problem in real time. Visit the site for update informations, Enjoy new features.",
     },
 ];
 
@@ -623,11 +623,11 @@ const arrayTerms = [
     },
     {
         title: "Know how your data is used",
-        text: "Upon using the contact form, and other forms in my portifolio web page, For contact form, all the fields mentioned will appear through my email as you have contacted, Using other forms available in this portifolio like the one under navigation > send your feedback will only display your messaage and email incase there is need to reply to you. Other formal data like your Web suffing activvities will be stored localy on your machine or your browser history. I dont share your data, instead will be agreement between me and you as my client.",
+        text: "Upon using the contact form, and other forms in my portifolio web page, For contact form, all the fields mentioned will appear through my email as you have contacted, Using other forms available in this portifolio like the one under navigation > send your feedback will only display your messaage and email incase there is need to reply to you {Under implemetation-not functioning now}. Other formal data like your Web suffing activvities will be stored localy on your machine or your browser history. I dont share your data, instead will be agreement between me and you as my client.",
     },
     {
         title: "What is contained in this portifolio",
-        text: "First, is common to know that security is the best concern while dealing with your loyal customers, this links is much secure hosted in netlify database , your data is secure, The portifolio is still under development and thus I suggest you give time to things that are doing wrong on your side, will be fixed soon. As soon as the final version will be out, ypu will get notified only if I HAVE YOUR CONTACT DETAILS such as the Email address.",
+        text: "First, is common to know that security is the best concern while dealing with your loyal customers, this links is much secure hosted in netlify database , your data is secure, The portifolio is still under development and thus I suggest you give time to things that are doing wrong on your side eg:- Warning of some buttons upon clicking, will be fixed soon. As soon as the final version will be out, you will get notified only if I HAVE YOUR CONTACT DETAILS such as the Email address. Safe browsing",
     },   
 ];
 function displayHelpTerms(item){
@@ -649,7 +649,7 @@ const helpElementPolicies = document.getElementById("helpPolicies");
 const arrayPolicies = [
     {
         title: "Information management",
-        text: "Please, be specific with the question and information your share about yourself under this platform, do not provide unrelated information because it will be used as the key information to find your request and get feedback from me to your personal email address. Use of false information as a client will break the links of service term and privacy, Which may lead to your feedback from here be unreachable.",
+        text: "Please, be specific with the question and information your share about yourself under this platform, do not provide unrelated information because it will be used as the key information to find your request and get feedback from me to your personal email address. Use of false information as a client will break the links of terms of service and privacy, Which may lead faulty communication between me and you as my client. Remember to put your Identity simple",
     },
     
 ];
