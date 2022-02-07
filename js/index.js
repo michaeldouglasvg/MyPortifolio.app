@@ -64,8 +64,9 @@ window.addEventListener("scroll", function(){
 scrollBtn.addEventListener("click", function(e){
     e.preventDefault();
 
-    window.screen(0, 0);
-})
+    alert("Oops!!! this button is not functioning at the moment, I suggest your manually scroll to your page of interest, The algorithm of the button is under programming, Thanks for your KINDNESS, Goodbye.");
+
+});
 // localStorage.removeItem('darkMode');
 // localStorage.clear(); //The syntax for removing all the localStorage items
 // navigation section
