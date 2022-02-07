@@ -64,7 +64,7 @@ window.addEventListener("scroll", function(){
 scrollBtn.addEventListener("click", function(e){
     e.preventDefault();
 
-    window.screenY(0);
+    window.screen(0, 0);
 })
 // localStorage.removeItem('darkMode');
 // localStorage.clear(); //The syntax for removing all the localStorage items
