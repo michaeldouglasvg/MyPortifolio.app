@@ -426,7 +426,7 @@ function displayProjects(items){
     let contents = items.map(function(singleProject){
         
         return `
-            <div class="projects__main-card">
+            <div class="projects__main-card" data-aos="fade-up">
             <div class="projects__image-link">
                 <p>${singleProject.projectTitle}</p>
                 <img src=${singleProject.projectImage} alt="project image" height="100px">
@@ -496,7 +496,7 @@ function displayServices(service){
     let services = service.map(function(singleService){
         
         return `
-        <div class="services__card-container">
+        <div class="services__card-container" data-aos="fade-up">
             <img src=${singleService.serviceImage} alt="service imsge" height="100px">
             <p class="servicedescription">${singleService.serviceDesc}</p>
             <div class="contact">

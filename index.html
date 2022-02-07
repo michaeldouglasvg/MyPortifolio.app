@@ -10,8 +10,8 @@
     <title>Gtechamour||portifolio-index-page</title>
     <link rel="icon" href="images/logotitle/imagetitle.png">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
 </head>
 <body>
     <div id="top" class="topsection" style="display: none;"></div>
@@ -63,40 +63,58 @@
         <div class="home" id="home">
            <div class="home__compined">
                 <div class="home__left">
-                    <h1 class="home__title">Michael Douglas</h1>
-                    <span class="skill"></span>
-                    <p id="mymessage"></p>
+                    <h1 class="home__title" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0">Michael Douglas</h1>
+                    <span class="skill" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0"></span>
+                    <p id="mymessage" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0"></p>
                     <div class="home__buttons">
-                        <a href="" onclick="cvdownload()">Download CV</a>
-                        <a href="#contact">Hire me</a>
+                        <a href="" onclick="cvdownload()" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0">Download CV</a>
+                        <a href="#contact" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0">Hire me</a>
                     </div>
                 </div>
                 <div class="home__right">
-                    <img src="images/slides/mainprofile.jpg" alt="MyPhoto" height="100px">
+                    <img src="images/slides/mainprofile.jpg" alt="MyPhoto" height="100px" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0">
                 </div>
            </div>
         </div>
         <!-- End of home -->
         <!-- ===== start of the skills page ===== -->
         <div class="skills" id="experince">
-            <h1 class="skills__title">My Skills</h1>
+            <h1 class="skills__title" data-aos="fade-up">My Skills</h1>
             <div class="skills__container">
-                <p class="skills__description" id="skillpage"></p>
+                <p class="skills__description" id="skillpage" data-aos="fade-up"></p>
                 <div class="skills__display">
                     <div class="skills__compined">
-                        <h1 class="general" id="showlanguage">
+                        <h1 class="general" id="showlanguage" data-aos="fade-up">
                             <p id="lantitle">My Languages</p>
                             <i class="fa fa-chevron-down lanicons"></i>
                         </h1>
-                        <div class="skills__card-container lanimages">
+                        <div class="skills__card-container lanimages" data-aos="fade-up">
                             <!-- dynamic loading -->
                         </div>
                     </div>
                     <div class="skills__category">
-                        <h1 class="types">My Categories</h1>
-                        <div class="skills__category-container">
+                        <h1 class="types" data-aos="fade-up">My Categories</h1>
+                        <div class="skills__category-container" data-aos="fade-up">
                             <!-- Content loaded dynamically --> 
-                            <span class="toggle">
+                            <span class="toggle" data-aos="fade-up">
                                 
                              </span>
                         </div>
@@ -107,7 +125,7 @@
         <!-- end of skills page -->
         <!-- =====start of projects page ===== -->
         <div class="projects" id="works">
-            <h1 class="projects__title">My Projects</h1>
+            <h1 class="projects__title" data-aos="fade-up">My Projects</h1>
             <div class="projects__container-projects" id="projectcontainer">
                 <!-- dynamic content loading -->
             </div>
@@ -115,7 +133,7 @@
         <!-- end of projects page -->
         <!-- ===== start of services page -->
         <div class="services" id="servicesAvalaible">
-            <h1 class="services__title">My Services</h1>
+            <h1 class="services__title" data-aos="fade-up">My Services</h1>
             <div class="services__service-container" id="serviceContainer">
                 <!-- dynamic loading -->
             </div>
@@ -123,11 +141,11 @@
         <!-- end of service page -->
         <!-- ===== start of the contact page ===== -->
         <div class="contacts" id="contact">
-            <h1 class="contacts__title">Contact me</h1>
-            <p id="contactdes"></p>
+            <h1 class="contacts__title" data-aos="fade-up">Contact me</h1>
+            <p id="contactdes" data-aos="fade-up"></p>
             <div class="contacts__contact-container">
-                <div class="contacts__left-section">
-                    <h1 class="text">More info</h1>
+                <div class="contacts__left-section" data-aos="fade-up">
+                    <h1 class="text" data-aos="fade-up">More info</h1>
                    
                     <div class="contacts__info-doc">
                         <div class="image">
@@ -174,8 +192,8 @@
             
                 </div>
                 <div class="contacts__right-section">
-                    <h1 class="text">Get Intouch</h1>
-                    <div class="contacts__form-container">
+                    <h1 class="text" data-aos="fade-up">Get Intouch</h1>
+                    <div class="contacts__form-container" data-aos="fade-up">
                         <form name="form" method="POST" data-netlify="true" onsubmit="return validateContactForm()">
                             <div class="input-group">
                                 <span>Full Name: </span>
@@ -332,8 +350,8 @@
         loop: true
     });
 </script>
-<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script> -->
+  </script>
 </html>  
