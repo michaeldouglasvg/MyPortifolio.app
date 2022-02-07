@@ -28,6 +28,44 @@ if(localStorage.getItem('dark-mode') == 'enabled'){
     document.getElementById("dmode").className = "fa fa-moon-o";
 }
 
+// header scroll effects
+const navBar = document.getElementById("head");
+const scrollBtn = document.querySelector(".topscroll");
+const smNavBar = document.getElementById("windowMenu");
+window.addEventListener("scroll", function(){
+
+    const scrollEffect = this.window.scrollY;
+
+    if(scrollEffect > 100){
+
+        navBar.classList.add("sticky-nav");
+    }else{
+
+        navBar.classList.remove("sticky-nav");
+    } 
+
+    if(scrollEffect > 400){
+
+       scrollBtn.classList.add("showup");
+    }else{
+
+        scrollBtn.classList.remove("showup");
+    }
+
+    if(scrollEffect > 300){
+
+        smNavBar.classList.add("windowHide");
+    }else{
+
+        smNavBar.classList.remove("windowHide");
+    }
+})
+
+scrollBtn.addEventListener("click", function(e){
+    e.preventDefault();
+
+    window.screenY(0);
+})
 // localStorage.removeItem('darkMode');
 // localStorage.clear(); //The syntax for removing all the localStorage items
 // navigation section

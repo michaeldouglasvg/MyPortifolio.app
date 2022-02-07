@@ -14,11 +14,20 @@
     <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet"> -->
 </head>
 <body>
+    <div id="top" class="topsection" style="display: none;"></div>
     <!-- page loader/ on content loaded dissapears -->
     <div class="loader">
         <img src="images/logo/mylogo.png" alt="Gtechamour">
     </div>
-    <div class="header">
+    <!-- scroll top effect -->
+    <div class="topscroll">
+      <a href="#head">
+        <i class="fa fa-chevron-up"></i>
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+    <!-- end scroll top -->
+    <div class="header" id="head">
         <div class="logo">
             <img src="images/logo/mylogo.png" alt="MyLogo" height="40px">
         </div>
@@ -205,7 +214,7 @@
         <!-- end of contact page -->
     </div>
     <!-- Widow pop up for small screens -->
-    <div class="window">
+    <div class="window" id="media">
         <div class="window__pop" id="toggle">
             <div class="window__main">
                 <a href="#home">
