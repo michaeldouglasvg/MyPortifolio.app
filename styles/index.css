@@ -356,6 +356,8 @@ body {
   right: 40px;
   display: block;
   z-index: 999;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .content {
