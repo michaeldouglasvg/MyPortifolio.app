@@ -233,12 +233,23 @@ body{
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
         color: var(--secondaryColor);
         background: var(--primaryColor);
-
+        overflow: hidden;
         i{
             font-size: 17px;
             color: var(--secondaryColor);
             background: var(--primaryColor);
-        
+            animation: pushUp .4s ease-in infinite;
+
+            @keyframes pushUp {
+                from{
+                    padding-bottom: 0;
+                    color: #0114ab;
+                }
+                to{
+                    padding-bottom: 20px;
+                    color: rgb(0, 136, 255);
+                }
+            }
         }
     }
 }
