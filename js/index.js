@@ -410,8 +410,8 @@ const projectCard = [
     },
     {
         id: 1,
-        projectTitle: "Main Website",
-        projectImage: "../images/Projects/web.png",
+        projectTitle: "Express your feelings.com",
+        projectImage: "../images/Projects/React.png",
         projectLink: "https://michaeldouglasvg.github.io/web.com/",
         projectCartegory: "Web Site",
         projectSize: "30MBs",
