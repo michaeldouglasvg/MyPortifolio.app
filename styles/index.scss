@@ -25,7 +25,66 @@ html{
     scroll-behavior: smooth;
 }
 
+// image click
+.mainhomeimage{
+    width: 100%;
+    height: 100%;
+    z-index: -1005;
+    visibility: hidden;
+    background: rgba(17, 20, 35, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 500ms;
 
+    span{
+       width: 20px;
+       height: 20px;
+       background: transparent;
+       color: white;
+       font-size: 30px;
+       display: grid;
+       place-items: center;
+       font-weight: 600;
+       cursor: pointer;
+       position: absolute;
+       right: 20px;
+       top: 5px;
+    }
+    .homeimage{
+        width: 300px;
+        height: 400px;
+        background: white;
+        @media only screen and (min-width: 426px){
+            width: 400px;
+            height: 400px;
+        }
+        @media only screen and (min-width: 769px){
+            width: 500px;
+            height: 450px;
+        }
+        @media only screen and (min-width: 1025px){
+            width: 600px;
+            height: 550px;
+        }
+    
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.showHomeImage{
+    z-index: 1005;
+    visibility: visible;
+    transition: all 500ms;
+}
 
 // animations
 .flipchevronup{
@@ -40,23 +99,6 @@ html{
         }
     }
 }
-
-// clocwise icon spin
-// .flipchevronclock{
-//     animation: show .2s ease forwards;
-//     transition: all 300ms;
-//     @keyframes show {
-//         from{
-//             transform: rotate(0deg);
-//         }
-//         to{
-//             transform: rotate(180deg);
-//         }
-//     }
-// }
-
-
-
 
 body{
     width: 100%;

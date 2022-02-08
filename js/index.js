@@ -28,6 +28,18 @@ if(localStorage.getItem('dark-mode') == 'enabled'){
     document.getElementById("dmode").className = "fa fa-moon-o";
 }
 
+// home image maximize
+function showImage(){
+    document.getElementById("imageZoom").classList.add("showHomeImage");
+
+    const close = document.getElementById("clodeHomeImage");
+
+    close.addEventListener("click", function(){
+
+        document.getElementById("imageZoom").classList.remove("showHomeImage");
+    })
+}
+
 // header scroll effects
 const navBar = document.getElementById("head");
 const scrollBtn = document.querySelector(".topscroll");

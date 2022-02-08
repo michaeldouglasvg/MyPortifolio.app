@@ -14,7 +14,12 @@
     <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
 </head>
 <body>
-    <div id="top" class="topsection" style="display: none;"></div>
+    <div class="mainhomeimage" id="imageZoom">
+        <span id="clodeHomeImage">&times;</span>
+        <div class="homeimage">
+            <img src="images/slides/mainprofile.jpg" alt="">
+        </div>
+    </div>
     <!-- page loader/ on content loaded dissapears -->
     <div class="loader">
         <img src="images/logo/mylogo.png" alt="Gtechamour">
@@ -87,10 +92,10 @@
                     </div>
                 </div>
                 <div class="home__right">
-                    <img src="images/slides/mainprofile.jpg" alt="MyPhoto" height="100px" data-aos="fade-zoom-in"
+                    <img onclick="showImage()" src="images/slides/mainprofile.jpg" alt="MyPhoto" height="100px" data-aos="fade-zoom-in"
      data-aos-easing="ease-in-back"
      data-aos-delay="100"
-     data-aos-offset="0">
+     data-aos-offset="0" style="cursor: pointer;">
                 </div>
            </div>
         </div>
