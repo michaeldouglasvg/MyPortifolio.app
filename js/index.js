@@ -396,7 +396,7 @@ const projectContainer = document.getElementById("projectcontainer");
 const projectCard = [
     {
         id: 1,
-        projectTitle: "To-do App",
+        projectTitle: "Web Based Todo List App",
         projectImage: "../images/Projects/todo.png",
         projectLink: "https://michaeldouglasvg.github.io/todo-list.com/",
         projectCartegory: "Web Site",
@@ -409,7 +409,7 @@ const projectCard = [
     },
     {
         id: 1,
-        projectTitle: "Web Template",
+        projectTitle: "Free Web template",
         projectImage: "../images/Projects/templates.png",
         projectLink: "https://michaeldouglasvg.github.io/prototype.com/",
         projectCartegory: "Web Site",
@@ -422,7 +422,7 @@ const projectCard = [
     },
     {
         id: 1,
-        projectTitle: "Express your feelings.com",
+        projectTitle: "At Makeitperfect.com",
         projectImage: "../images/Projects/React.png",
         projectLink: "https://michaeldouglasvg.github.io/web.com/",
         projectCartegory: "Web Site",
