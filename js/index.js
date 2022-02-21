@@ -396,9 +396,9 @@ const projectContainer = document.getElementById("projectcontainer");
 const projectCard = [
     {
         id: 1,
-        projectTitle: "Web Based Todo List App",
-        projectImage: "../images/Projects/todo.png",
-        projectLink: "https://michaeldouglasvg.github.io/todo-list.com/",
+        projectTitle: "React to-do app",
+        projectImage: "../images/Projects/todos.png",
+        projectLink: "https://maintodo-appgtech.netlify.app",
         projectCartegory: "Web Site",
         projectSize: "20MBs",
         hostedOn: "Github",
