@@ -408,7 +408,7 @@ const projectCard = [
         projectDesc: "Is a web based application to track your daily tasks, Complited, uncomplited and also you can delete task",
     },
     {
-        id: 1,
+        id: 2,
         projectTitle: "Free Web template",
         projectImage: "../images/Projects/templates.png",
         projectLink: "https://michaeldouglasvg.github.io/prototype.com/",
@@ -421,7 +421,7 @@ const projectCard = [
         projectDesc: "Build as a free template to help those in need of using webtemplates to create their own site, modify and deploy",
     },
     {
-        id: 1,
+        id: 3,
         projectTitle: "At Makeitperfect.com",
         projectImage: "../images/Projects/React.png",
         projectLink: "https://michaeldouglasvg.github.io/web.com/",
