@@ -46,10 +46,14 @@
         @media only screen and (min-width: 769px){
            width: 80%;
            margin: 20px auto;
+           grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+           grid-gap: 10px;
         }
         @media only screen and (min-width: 1025px){
            width: 80%;
            margin: 20px auto;
+           grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+           grid-gap: 10px;
         }
     }
 
@@ -100,10 +104,10 @@
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 display: flex;
                 align-items: center;
-                &:nth-child(1){
+                &:nth-last-child(1){
                     i{
                         padding-left: 5px;
-                        color: orangered;
+                        color: rgb(0, 115, 255);
                         font-size: 13px;
                     }
                 }

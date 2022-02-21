@@ -422,9 +422,9 @@ const projectCard = [
     },
     {
         id: 3,
-        projectTitle: "At Makeitperfect.com",
+        projectTitle: "At Naturalwind.com",
         projectImage: "../images/Projects/React.png",
-        projectLink: "https://michaeldouglasvg.github.io/web.com/",
+        projectLink: "https://atmakeitperfect.netlify.app",
         projectCartegory: "Web Site",
         projectSize: "30MBs",
         hostedOn: "Github",
@@ -483,7 +483,7 @@ function displayProjects(items){
                 <p>${singleProject.projectTitle}</p>
                 <img src=${singleProject.projectImage} alt="project image" height="100px">
                 <div class="info">
-                    <a href="${singleProject.projectLink}"><i class="fa fa-link"></i></a>
+                    <a href="${singleProject.projectLink}" target="__blank">View Project<i class="fa fa-link"></i></a>
                 </div>
             </div>
             <div class="projects__project-description cardback">
