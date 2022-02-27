@@ -959,6 +959,10 @@
   border: 1px solid var(--secondaryColor);
 }
 
+.projects__image-link img:hover {
+  cursor: pointer;
+}
+
 .projects__image-link .info {
   width: 100%;
   display: -webkit-box;
@@ -995,6 +999,10 @@
 .projects__image-link .info a i {
   font-size: 17px;
   color: blue;
+}
+
+.projects .image {
+  display: none;
 }
 
 .projects__project-description {
@@ -1186,8 +1194,8 @@
   max-width: 300px;
   height: 260px;
   max-height: 300px;
-  -webkit-box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   margin: 10px auto;
   overflow-y: hidden;
   display: -webkit-box;

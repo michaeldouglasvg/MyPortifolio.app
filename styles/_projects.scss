@@ -89,6 +89,9 @@
             margin: 0 auto;
             height: 70%;
             border: 1px solid var(--secondaryColor);
+            &:hover{
+                cursor: pointer;
+            }
         }
         .info{
             width: 100%;
@@ -121,6 +124,22 @@
         }
     }
 
+
+
+
+
+
+
+    .image{
+        display: none;
+    }
+
+
+
+
+
+
+    
     &__project-description{
         position: relative;
         display: flex;

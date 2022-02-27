@@ -72,13 +72,6 @@ window.addEventListener("scroll", function(){
         smNavBar.classList.remove("windowHide");
     }
 })
-
-scrollBtn.addEventListener("click", function(e){
-    e.preventDefault();
-
-    alert("Oops!!! this button is not functioning at the moment, I suggest you manually scroll to your page of interest, The algorithm of the button is under programming, Thanks for your KINDNESS, Goodbye.");
-
-});
 // localStorage.removeItem('darkMode');
 // localStorage.clear(); //The syntax for removing all the localStorage items
 // navigation section
@@ -114,7 +107,7 @@ function showMedia(){
 
 // cv download functionality
 function cvdownload(){
-    alert("Oops!!! the document is being updated, will be out soon for download, The document will consist up-to-date information. Keep browsing the website to get new features. Thanks for your support.");
+    alert("Oops!!! the document is fully updated, and is available for downloaded, upon request through the contact form, below. Thank you.");
 }
 
 
@@ -516,6 +509,24 @@ function displayProjects(items){
 
     projectContainer.innerHTML = contents;
 }
+
+
+
+
+
+
+
+
+
+const cartext = document.querySelector(".cardback");
+projectContainer.addEventListener("click", function(e){
+    const currentBtnImg = e.target;
+})
+
+
+
+
+
 
 
 // services container

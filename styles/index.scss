@@ -255,7 +255,7 @@ body{
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 10px;
+    bottom: 40px;
     right: 40px;
     color: var(--secondaryColor);
     background: var(--primaryColor);
@@ -300,10 +300,14 @@ body{
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 10px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
+    color: var(--secondaryColor);
+    background: var(--primaryColor);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     display: block;
-    z-index: 999;
+    z-index: 1000;
     transition: all 500ms;
 }
 // content styles
